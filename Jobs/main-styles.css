@@ -1,0 +1,212 @@
+main {
+	margin: 0 auto;
+	padding: 2rem;
+}
+
+.heading {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
+	font-size: 70px;
+	line-height: 25.6px;
+	letter-spacing: 0;
+	margin-bottom: 2rem;
+	text-align: center;
+	padding-top: 76px;
+}
+
+.text-container {
+	padding-top: 130px;
+	margin: 0 auto;
+	max-width: 1460px;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 41px;
+	letter-spacing: 0%;
+}
+
+.job-list {
+	list-style-type: none;
+	padding-left: 0;
+	margin: 20px 0;
+}
+
+.job-list li {
+	position: relative;
+	padding-left: 25px;
+	margin-bottom: 15px;
+}
+
+.job-list li:before {
+	content: '•';
+	position: absolute;
+	left: 0;
+	color: #000;
+}
+
+p {
+	margin: 20px 0;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+/* Desktop Adjustments */
+@media screen and (max-width: 1450px) {
+	.heading {
+		font-size: 60px;
+		padding-top: 60px;
+		line-height: 1.2;
+	}
+
+	.text-container {
+		padding-top: 100px;
+		max-width: 1200px;
+		font-size: 26px;
+		line-height: 36px;
+	}
+
+	.job-list {
+		margin: 18px 0;
+	}
+
+	.job-list li {
+		font-size: 26px;
+		line-height: 36px;
+		margin-bottom: 12px;
+	}
+}
+
+/* Laptop Adjustments */
+@media screen and (max-width: 1200px) {
+	.heading {
+		font-size: 50px;
+		padding-top: 50px;
+	}
+
+	.text-container {
+		padding-top: 80px;
+		max-width: 90%;
+		font-size: 22px;
+		line-height: 32px;
+	}
+
+	.job-list {
+		margin: 15px 0;
+	}
+
+	.job-list li {
+		font-size: 22px;
+		line-height: 32px;
+		margin-bottom: 10px;
+		padding-left: 20px;
+	}
+}
+
+/* Tablet Adjustments */
+@media screen and (max-width: 992px) {
+	.heading {
+		font-size: 42px;
+		padding-top: 40px;
+		margin-bottom: 1.5rem;
+	}
+
+	.text-container {
+		padding-top: 60px;
+		max-width: 95%;
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	.job-list {
+		margin: 12px 0;
+	}
+
+	.job-list li {
+		font-size: 20px;
+		line-height: 30px;
+		margin-bottom: 8px;
+	}
+
+	p {
+		margin: 15px 0;
+	}
+}
+
+/* Mobile Adjustments */
+@media screen and (max-width: 768px) {
+	main {
+		padding: 1.5rem 1rem;
+	}
+
+	.heading {
+		font-size: 36px;
+		padding-top: 30px;
+		line-height: 1.2;
+		margin-bottom: 1rem;
+	}
+
+	.text-container {
+		padding-top: 40px;
+		max-width: 100%;
+		font-size: 18px;
+		line-height: 28px;
+	}
+
+	.job-list {
+		margin: 10px 0;
+	}
+
+	.job-list li {
+		font-size: 18px;
+		line-height: 28px;
+		margin-bottom: 8px;
+		padding-left: 18px;
+	}
+
+	.job-list li:before {
+		font-size: 18px;
+	}
+
+	p {
+		margin: 12px 0;
+	}
+}
+
+/* Small Mobile Adjustments */
+@media screen and (max-width: 480px) {
+	main {
+		padding: 1rem 1rem;
+	}
+
+	.heading {
+		font-size: 32px;
+		padding-top: 20px;
+	}
+
+	.text-container {
+		padding-top: 30px;
+		font-size: 16px;
+		line-height: 26px;
+	}
+
+	.job-list {
+		margin: 8px 0;
+	}
+
+	.job-list li {
+		font-size: 16px;
+		line-height: 26px;
+		margin-bottom: 6px;
+		padding-left: 15px;
+	}
+
+	.job-list li:before {
+		font-size: 16px;
+	}
+
+	p {
+		margin: 10px 0;
+	}
+}

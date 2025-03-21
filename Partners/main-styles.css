@@ -1,0 +1,135 @@
+main {
+	margin: 0 auto;
+	padding: 2rem;
+}
+
+.heading {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
+	font-size: 70px;
+	line-height: 25.6px;
+	letter-spacing: 0;
+	margin-bottom: 2rem;
+	text-align: center;
+	padding-top: 76px;
+}
+
+.text-container {
+	padding-top: 130px;
+	margin: 0 auto;
+	max-width: 1287px;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 41px;
+	letter-spacing: 0;
+}
+
+.text-container :nth-child(1) {
+	margin-bottom: 35px;
+}
+
+/* Desktop Adjustments */
+@media screen and (max-width: 1450px) {
+	.heading {
+		font-size: 60px;
+		padding-top: 60px;
+		line-height: 1.2;
+	}
+
+	.text-container {
+		padding-top: 100px;
+		max-width: 1000px;
+		font-size: 26px;
+		line-height: 36px;
+	}
+
+	.text-container :nth-child(1) {
+		margin-bottom: 30px;
+	}
+}
+
+/* Laptop Adjustments */
+@media screen and (max-width: 1200px) {
+	.heading {
+		font-size: 50px;
+		padding-top: 50px;
+	}
+
+	.text-container {
+		padding-top: 80px;
+		max-width: 90%;
+		font-size: 22px;
+		line-height: 32px;
+	}
+
+	.text-container :nth-child(1) {
+		margin-bottom: 25px;
+	}
+}
+
+/* Tablet Adjustments */
+@media screen and (max-width: 992px) {
+	.heading {
+		font-size: 42px;
+		padding-top: 40px;
+		margin-bottom: 1.5rem;
+	}
+
+	.text-container {
+		padding-top: 60px;
+		max-width: 95%;
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	.text-container :nth-child(1) {
+		margin-bottom: 20px;
+	}
+}
+
+/* Mobile Adjustments */
+@media screen and (max-width: 768px) {
+	main {
+		padding: 1.5rem 1rem;
+	}
+
+	.heading {
+		font-size: 36px;
+		padding-top: 30px;
+		line-height: 1.2;
+		margin-bottom: 1rem;
+	}
+
+	.text-container {
+		padding-top: 40px;
+		max-width: 100%;
+		font-size: 18px;
+		line-height: 28px;
+	}
+
+	.text-container :nth-child(1) {
+		margin-bottom: 18px;
+	}
+}
+
+/* Small Mobile Adjustments */
+@media screen and (max-width: 480px) {
+	main {
+		padding: 1rem 1rem;
+	}
+
+	.heading {
+		font-size: 32px;
+		padding-top: 20px;
+	}
+
+	.text-container {
+		padding-top: 30px;
+		font-size: 16px;
+		line-height: 26px;
+	}
+
+	.text-container :nth-child(1) {
+		margin-bottom: 15px;
+	}
+}

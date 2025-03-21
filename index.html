@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+		<style type="text/css">
+			:root {
+				--main-blue: #3988ff;
+				--dark-blue: #2b7fff;
+				--text-primary: #000000;
+				--text-secondary: #333333;
+				--text-tertiary: #969696;
+				--bg-color: #fcf8f8;
+			}
+
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				font-feature-settings: 'pnum' on, 'lnum' on;
+			}
+
+			body {
+				background: var(--bg-color);
+				font-family: 'Montserrat', sans-serif;
+				color: var(--text-primary);
+				margin: 0;
+				padding: 0;
+				min-height: 100vh;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.logo {
+				font-size: 24px;
+				font-weight: 400;
+				text-decoration: none;
+				color: var(--text-primary);
+				letter-spacing: -0.02em;
+				margin-bottom: 20px;
+				line-height: 1;
+			}
+
+			.logo-light {
+				font-weight: 700;
+			}
+
+			.maintenance-container {
+				background-color: white;
+				border-radius: 20px;
+				box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+				padding: 60px;
+				max-width: 90%;
+				width: 600px;
+				text-align: center;
+				position: relative;
+				overflow: hidden;
+			}
+
+			.maintenance-container::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 6px;
+				height: 100%;
+				background-color: var(--main-blue);
+			}
+
+			.emoji {
+				font-size: 70px;
+				margin-bottom: 30px;
+			}
+
+			h1 {
+				color: var(--text-primary);
+				margin-top: 0;
+				margin-bottom: 20px;
+				font-size: 32px;
+				font-weight: 800;
+			}
+
+			p {
+				font-size: 18px;
+				line-height: 1.6;
+				margin-bottom: 40px;
+				color: var(--text-secondary);
+				font-weight: 400;
+			}
+
+			.estimated-time {
+				font-weight: 500;
+				font-size: 16px;
+				margin-bottom: 30px;
+				color: var(--text-tertiary);
+			}
+
+			.progress-wrapper {
+				position: relative;
+				margin-top: 20px;
+			}
+
+			.progress-bar {
+				height: 10px;
+				background-color: #f0f0f0;
+				border-radius: 5px;
+				overflow: hidden;
+				margin-bottom: 10px;
+			}
+
+			.progress-fill {
+				height: 100%;
+				background-color: var(--main-blue);
+				border-radius: 5px;
+				width: 70%;
+				animation: progress 2s ease-in-out infinite alternate;
+			}
+
+			.progress-status {
+				display: flex;
+				justify-content: space-between;
+				font-size: 14px;
+				color: var(--text-tertiary);
+			}
+
+			.contact-info {
+				margin-top: 40px;
+				display: flex;
+				justify-content: center;
+				gap: 20px;
+			}
+
+			.contact-item {
+				display: flex;
+				align-items: center;
+				gap: 8px;
+				color: var(--text-primary);
+				text-decoration: none;
+				font-weight: 500;
+				font-size: 16px;
+				transition: color 0.3s ease;
+			}
+
+			.contact-item:hover {
+				color: var(--main-blue);
+			}
+
+			.contact-icon {
+				width: 24px;
+				height: 24px;
+				fill: currentColor;
+			}
+
+			@keyframes progress {
+				from {
+					width: 40%;
+				}
+				to {
+					width: 80%;
+				}
+			}
+
+			/* Desktop Adjustments */
+			@media screen and (max-width: 1450px) {
+				.maintenance-container {
+					width: 550px;
+					padding: 50px;
+				}
+
+				h1 {
+					font-size: 30px;
+				}
+			}
+
+			/* Laptop Adjustments */
+			@media screen and (max-width: 1200px) {
+				.maintenance-container {
+					width: 500px;
+					padding: 45px;
+				}
+
+				.emoji {
+					font-size: 65px;
+				}
+
+				h1 {
+					font-size: 28px;
+				}
+			}
+
+			/* Tablet Adjustments */
+			@media screen and (max-width: 992px) {
+				.maintenance-container {
+					width: 450px;
+					padding: 40px;
+				}
+
+				.emoji {
+					font-size: 60px;
+					margin-bottom: 25px;
+				}
+
+				h1 {
+					font-size: 26px;
+				}
+
+				p {
+					font-size: 16px;
+				}
+			}
+
+			/* Mobile Adjustments */
+			@media screen and (max-width: 768px) {
+				.logo {
+					font-size: 20px;
+				}
+
+				.maintenance-container {
+					width: 85%;
+					padding: 35px 25px;
+				}
+
+				.emoji {
+					font-size: 55px;
+					margin-bottom: 20px;
+				}
+
+				h1 {
+					font-size: 24px;
+					margin-bottom: 15px;
+				}
+
+				p {
+					font-size: 15px;
+					margin-bottom: 30px;
+				}
+
+				.estimated-time {
+					font-size: 14px;
+				}
+
+				.contact-info {
+					flex-direction: column;
+					gap: 15px;
+				}
+			}
+
+			/* Small Mobile Adjustments */
+			@media screen and (max-width: 480px) {
+				.maintenance-container {
+					width: 90%;
+					padding: 30px 20px;
+				}
+
+				.emoji {
+					font-size: 50px;
+				}
+
+				h1 {
+					font-size: 22px;
+				}
+
+				p {
+					font-size: 14px;
+					line-height: 1.5;
+				}
+
+				.progress-bar {
+					height: 8px;
+				}
+			}
+		</style>
+		<title>MERCHPRODUCTION - Техническое обслуживание</title>
+	</head>
+
+	<body>
+		<div class="logo">MERCH<span class="logo-light">PRODUCTION</span></div>
+		<div class="maintenance-container">
+			<div class="emoji">🛠️🙂</div>
+			<h1>Сайт на техническом обслуживании</h1>
+			<p>
+				Мы работаем над улучшением нашего сайта, чтобы сделать его еще удобнее и
+				функциональнее для вас. Благодарим за понимание и терпение.
+			</p>
+			<div class="progress-wrapper">
+				<div class="progress-bar">
+					<div class="progress-fill"></div>
+				</div>
+				<div class="progress-status"></div>
+			</div>
+
+			<div class="contact-info">
+				<a href="tel:84993228207" class="contact-item">
+					<svg
+						class="contact-icon"
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24"
+					>
+						<path
+							d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"
+						/>
+					</svg>
+					8 (499) 322-82-07
+				</a>
+				<a href="mailto:hello@merchproduction.ru" class="contact-item">
+					<svg
+						class="contact-icon"
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24"
+					>
+						<path
+							d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+						/>
+					</svg>
+					hello@merchproduction.ru
+				</a>
+			</div>
+		</div>
+	</body>
+</html>

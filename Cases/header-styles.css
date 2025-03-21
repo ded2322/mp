@@ -1,0 +1,238 @@
+/* Header */
+.header {
+	padding: 20px 0;
+}
+
+.header-container {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 60px;
+	padding: 0 40px;
+}
+
+.logo {
+	font-size: 20px;
+	font-weight: 400;
+	text-decoration: none;
+	color: #000;
+	letter-spacing: -0.02em;
+}
+
+.logo-light {
+	font-weight: 700;
+}
+
+.nav {
+	display: flex;
+	gap: 22px;
+}
+
+.nav a {
+	text-decoration: none;
+	color: var(--text-primary);
+	font-weight: 500;
+	font-size: 18px;
+	letter-spacing: 0.02em;
+	transition: color 0.3s ease;
+}
+
+.nav a:hover {
+	color: var(--main-blue);
+}
+
+.contact-info {
+	display: flex;
+	align-items: center;
+	gap: 25px;
+}
+
+.phone {
+	text-decoration: none;
+	color: var(--text-primary);
+	font-weight: 500;
+	font-size: 18px;
+	letter-spacing: -0.01em;
+}
+
+.rectangle {
+	width: 52px;
+	height: 52px;
+	background-color: #fff;
+	border-radius: 8.57px;
+}
+
+.consultation-btn {
+	padding: 10px 20px;
+	border: 2px solid var(--main-blue);
+	border-radius: 8.57px;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 20px;
+	transition: all 0.3s ease;
+	margin-left: 11px;
+	color: black;
+}
+
+.consultation-btn:hover {
+	background: var(--main-blue);
+	color: #fff;
+}
+
+.contact-info a {
+	line-height: 1;
+	font-size: 18px;
+}
+
+/* Header Adaptive Styles */
+
+/* Desktop Adjustments */
+@media screen and (max-width: 1450px) {
+	.header-container {
+		gap: 20px;
+	}
+
+	.nav {
+		gap: 15px;
+	}
+
+	.nav a {
+		font-size: 16px;
+	}
+
+	.contact-info {
+		padding-left: 10px;
+		gap: 15px;
+	}
+
+	.contact-info a {
+		font-size: 16px;
+	}
+
+	.consultation-btn {
+		font-size: 16px;
+		padding: 8px 15px;
+	}
+	.img-t-w {
+		max-width: 90%;
+	}
+}
+
+/* Laptop Adjustments */
+@media screen and (max-width: 1200px) {
+	.header-container {
+		gap: 10px;
+		padding: 0 15px;
+	}
+
+	.nav {
+		gap: 10px;
+	}
+
+	.nav a {
+		font-size: 13px;
+	}
+
+	.contact-info {
+		padding-left: 0px;
+		gap: 10px;
+	}
+	.contact-info a {
+		font-size: 13px;
+	}
+
+	.img-t-w {
+		max-width: 70%;
+	}
+
+	.consultation-btn {
+		font-size: 14px;
+		padding: 8px 12px;
+		margin-left: 5px;
+	}
+
+	.rectangle {
+		width: 40px;
+		height: 40px;
+	}
+}
+
+/* Tablet Adjustments */
+@media screen and (max-width: 992px) {
+	.header-container {
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.nav {
+		order: 3;
+		width: 100%;
+		justify-content: space-between;
+		margin-top: 15px;
+	}
+
+	.contact-info {
+		padding-left: 0;
+	}
+
+	.contact-info a img {
+		width: 30px;
+		height: 30px;
+	}
+}
+
+/* Mobile Menu Styles */
+@media screen and (max-width: 768px) {
+	.header-container {
+		position: relative;
+		padding: 15px;
+	}
+
+	.nav {
+		display: none; /* Hide regular nav on mobile - replace with mobile menu button */
+	}
+
+	.contact-info {
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		gap: 10px;
+		margin-top: 10px;
+	}
+
+	.phone {
+		font-size: 16px;
+		margin-right: 10px;
+	}
+
+	.consultation-btn {
+		display: none; /* Hide in header, will show in mobile menu */
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.contact-info a img {
+		display: none;
+	}
+}
+
+/* Small Mobile Adjustments */
+@media screen and (max-width: 480px) {
+	.header {
+		padding: 10px 0;
+	}
+
+	.logo {
+		font-size: 18px;
+	}
+
+	.contact-info {
+		width: 100%;
+		justify-content: space-between;
+	}
+
+	.phone {
+		width: 100%;
+		text-align: left;
+		margin-bottom: 5px;
+	}
+}

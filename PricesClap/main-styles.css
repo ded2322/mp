@@ -1,0 +1,285 @@
+/* Main content styles */
+main {
+	margin: 0 auto;
+	padding: 2rem;
+	max-width: 1200px;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* Heading styles */
+.heading {
+	font-size: 50px;
+	font-weight: 800;
+	text-align: center;
+	margin-bottom: 60px;
+	text-transform: uppercase;
+	font-family: Montserrat;
+	line-height: 56px;
+	vertical-align: middle;
+}
+
+/* Service description styles */
+.service-description {
+	margin-bottom: 50px;
+}
+
+.service-title {
+	font-size: 43.59px;
+	font-weight: 500;
+	margin-bottom: 30px;
+	margin-top: 20px;
+	line-height: 56.67px;
+	vertical-align: middle;
+}
+
+.service-text {
+	font-size: 21.79px;
+	line-height: 34.87px;
+	margin-bottom: 25px;
+	font-weight: 400;
+	vertical-align: middle;
+}
+
+/* Benefits list styles */
+.benefits-list {
+	list-style-type: none;
+	padding-left: 0;
+	margin-bottom: 30px;
+}
+
+.benefits-list li {
+	position: relative;
+	padding-left: 25px;
+	margin-bottom: 15px;
+	font-size: 21.79px;
+	line-height: 34.87px;
+	font-weight: 400;
+	vertical-align: middle;
+}
+
+.benefits-list li:before {
+	content: '•';
+	position: absolute;
+	left: 0;
+	color: #000;
+}
+
+/* Pricing table styles */
+.pricing-section {
+	max-width: 1200px;
+	margin: 0 auto 60px;
+	padding: 0;
+}
+
+.pricing-table-wrapper {
+	overflow-x: auto;
+	margin-bottom: 30px;
+	border-radius: 3px;
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-table {
+	width: 100%;
+	border-collapse: collapse;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #fff;
+}
+
+.pricing-table tr:nth-child(odd) {
+	background-color: #f9f9f9;
+}
+
+.pricing-table td {
+	padding: 20px 30px;
+	border: 1px solid #eee;
+	font-size: 20px;
+	font-weight: 400;
+	color: #333;
+	vertical-align: middle;
+	line-height: 32px;
+}
+
+.pricing-table td:first-child {
+	text-align: left;
+	width: 34%;
+	font-weight: 500;
+}
+
+.pricing-table td:nth-child(2) {
+	text-align: center;
+	width: 33%;
+}
+
+.pricing-table td:last-child {
+	text-align: center;
+	width: 33%;
+	font-weight: 500;
+}
+
+/* Minimum order note */
+.min-order-text {
+	text-align: center;
+	font-weight: 400;
+	font-size: 21px;
+	line-height: 32px;
+	margin: 30px 0 35px;
+	color: #333;
+}
+
+/* Button styles */
+.button-container {
+	text-align: center;
+	margin: 25px 0 70px;
+}
+
+.request-btn {
+	display: inline-block;
+	width: 470px;
+	height: 103px;
+	border-radius: 17.14px;
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 103px;
+	text-align: center;
+	background-color: #3988ff;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+	text-decoration: none;
+}
+
+.request-btn:hover {
+	background-color: #2979ff;
+}
+
+/* Information sections */
+.info-section {
+	margin: 40px 0 80px;
+}
+
+.section-title {
+	font-size: 43.1px;
+	font-weight: 500;
+	margin-bottom: 30px;
+	line-height: 56.02px;
+	vertical-align: middle;
+}
+
+.section-text {
+	font-size: 21.55px;
+	line-height: 34.48px;
+	margin-bottom: 25px;
+	color: #333;
+	font-weight: 400;
+	vertical-align: middle;
+}
+
+.services-list {
+	list-style-type: none;
+	padding-left: 0;
+	margin-bottom: 35px;
+}
+
+.services-list li {
+	position: relative;
+	padding-left: 25px;
+	margin-bottom: 15px;
+	font-size: 21.55px;
+	line-height: 34.48px;
+	font-weight: 400;
+	vertical-align: middle;
+}
+
+.services-list li:before {
+	content: '•';
+	position: absolute;
+	left: 0;
+	color: #000;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+	.heading {
+		font-size: 36px;
+		margin-bottom: 40px;
+		line-height: 44px;
+	}
+
+	.service-title,
+	.section-title {
+		font-size: 28px;
+		line-height: 36px;
+	}
+
+	.service-text,
+	.section-text,
+	.benefits-list li,
+	.services-list li {
+		font-size: 18px;
+		line-height: 28px;
+	}
+
+	.pricing-table td {
+		padding: 12px;
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	.request-btn {
+		width: 100%;
+		max-width: 320px;
+		height: 80px;
+		line-height: 80px;
+		font-size: 24px;
+	}
+
+	.min-order-text {
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.heading {
+		font-size: 28px;
+		margin-bottom: 30px;
+		line-height: 36px;
+	}
+
+	.service-title,
+	.section-title {
+		font-size: 24px;
+		line-height: 32px;
+	}
+
+	.service-text,
+	.benefits-list li,
+	.section-text,
+	.services-list li {
+		font-size: 16px;
+		line-height: 26px;
+	}
+
+	.pricing-table {
+		min-width: 450px;
+	}
+
+	.pricing-table td {
+		padding: 10px;
+		font-size: 14px;
+		line-height: 22px;
+	}
+
+	.request-btn {
+		height: 60px;
+		font-size: 20px;
+		line-height: 60px;
+		max-width: 280px;
+	}
+
+	.min-order-text {
+		font-size: 16px;
+		line-height: 24px;
+	}
+}

@@ -1,0 +1,634 @@
+/* =====================================
+   БАЗОВЫЕ СТИЛИ (styles.css)
+   ===================================== */
+
+/* --------------------------------------
+   1. Переменные и сброс стилей
+   -------------------------------------- */
+:root {
+	/* Цветовая палитра */
+	--main-blue: #3988ff;
+	--dark-blue: #2b7fff;
+	--text-primary: #000000;
+	--text-secondary: #333333;
+	--text-tertiary: #969696;
+	--bg-color: #fcf8f8;
+	--border-color: rgba(0, 0, 0, 0.1);
+
+	/* Типографика */
+	--base-font-size: 16px;
+	--heading-font-size: 70px;
+	--subheading-font-size: 50px;
+	--body-font-size: 30px;
+	--small-font-size: 14px;
+
+	/* Отступы и размеры */
+	--container-padding: 40px;
+	--header-height: 90px;
+	--border-radius: 10px;
+	--input-height: 105px;
+
+	/* Переходы */
+	--transition-fast: 0.2s ease;
+	--transition-medium: 0.3s ease;
+	--transition-slow: 0.5s ease;
+}
+
+/* Сброс стилей */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+/* --------------------------------------
+	 2. Глобальные и базовые элементы
+	 -------------------------------------- */
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: var(--bg-color);
+	color: var(--text-primary);
+	line-height: 1.5;
+	font-size: var(--base-font-size);
+	width: 100%;
+	min-height: 100vh;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	transition: color var(--transition-medium);
+}
+
+button {
+	cursor: pointer;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+	max-width: 1650px;
+	margin: 0 auto;
+	padding: 0 var(--container-padding);
+	width: 100%;
+}
+
+.page-wrapper {
+	overflow-x: hidden;
+	position: relative;
+	width: 100%;
+}
+
+/* --------------------------------------
+	 3. Типографика
+	 -------------------------------------- */
+.heading {
+	font-weight: 800;
+	font-size: var(--heading-font-size);
+	line-height: 1.2;
+	margin-bottom: 2rem;
+	text-align: center;
+	padding-top: 76px;
+}
+
+.subheading {
+	font-weight: 700;
+	font-size: var(--subheading-font-size);
+	line-height: 1.2;
+	margin-bottom: 2rem;
+	padding-top: 96px;
+	padding-left: 64px;
+}
+
+.description,
+.description-2 {
+	font-weight: 400;
+	font-size: var(--body-font-size);
+	line-height: 1.5;
+	padding-left: 64px;
+}
+
+.description {
+	padding-top: 60px;
+}
+
+/* --------------------------------------
+	 4. Кнопки и интерактивные элементы
+	 -------------------------------------- */
+.consultation-btn {
+	padding: 10px 20px;
+	border: 2px solid var(--main-blue);
+	border-radius: 8.57px;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 20px;
+	transition: all var(--transition-medium);
+	color: var(--text-primary);
+	display: inline-block;
+	text-align: center;
+}
+
+.consultation-btn:hover {
+	background: var(--main-blue);
+	color: #fff;
+}
+
+.primary-btn {
+	padding: 14px 50px;
+	background: var(--main-blue);
+	color: #fff;
+	border: none;
+	border-radius: var(--border-radius);
+	font-weight: 500;
+	font-size: 20px;
+	text-decoration: none;
+	transition: background-color var(--transition-medium);
+	display: inline-block;
+	text-align: center;
+}
+
+.primary-btn:hover {
+	background: var(--dark-blue);
+}
+
+.secondary-btn {
+	padding: 14px 21px;
+	background: #fff;
+	border: 2px solid var(--main-blue);
+	color: var(--text-primary);
+	border-radius: var(--border-radius);
+	font-weight: 500;
+	font-size: 20px;
+	text-decoration: none;
+	transition: background-color var(--transition-medium);
+	display: inline-block;
+	text-align: center;
+}
+
+.secondary-btn:hover {
+	background: rgba(43, 127, 255, 0.1);
+}
+
+/* --------------------------------------
+	 5. Шапка (Header)
+	 -------------------------------------- */
+.header {
+	padding: 20px 0;
+	position: sticky;
+	top: 0;
+	background-color: var(--bg-color);
+	z-index: 100;
+	transition: transform var(--transition-medium),
+		box-shadow var(--transition-medium),
+		background-color var(--transition-medium);
+}
+
+.header.scrolled {
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	background-color: rgba(252, 248, 248, 0.97);
+}
+
+.header.header-hidden {
+	transform: translateY(-100%);
+}
+
+.header-container {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 60px;
+}
+
+.logo {
+	font-size: 20px;
+	font-weight: 400;
+	text-decoration: none;
+	color: var(--text-primary);
+	letter-spacing: -0.02em;
+	line-height: 1;
+}
+
+.logo-light {
+	font-weight: 700;
+}
+
+.nav {
+	display: flex;
+	gap: 22px;
+}
+
+.nav a {
+	text-decoration: none;
+	color: var(--text-primary);
+	font-weight: 500;
+	font-size: 20px;
+	letter-spacing: 0.02em;
+	transition: color var(--transition-medium);
+	position: relative;
+}
+
+.nav a:hover {
+	color: var(--main-blue);
+}
+
+.nav a.active {
+	color: var(--main-blue);
+}
+
+.nav a.active::after {
+	content: '';
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: var(--main-blue);
+}
+
+.contact-info {
+	display: flex;
+	align-items: center;
+	gap: 25px;
+	margin-left: auto;
+}
+
+.phone {
+	text-decoration: none;
+	color: var(--text-primary);
+	font-weight: 500;
+	font-size: 20px;
+	letter-spacing: -0.01em;
+}
+
+.social-links {
+	display: flex;
+	gap: 10px;
+}
+
+.social-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	line-height: 1;
+}
+
+/* --------------------------------------
+	 6. Мобильное меню
+	 -------------------------------------- */
+.mobile-menu-btn {
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 28px;
+	height: 20px;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	z-index: 1000;
+	position: relative;
+}
+
+.mobile-menu-btn span {
+	width: 100%;
+	height: 2px;
+	background-color: var(--text-primary);
+	transition: transform var(--transition-medium),
+		opacity var(--transition-medium);
+}
+
+.mobile-menu {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #fff;
+	z-index: 999;
+	padding: 20px var(--container-padding);
+	flex-direction: column;
+	transform: translateY(-100%);
+	transition: transform var(--transition-slow);
+}
+
+.mobile-menu-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 40px;
+}
+
+.close-menu-btn {
+	background: transparent;
+	border: none;
+	font-size: 24px;
+	cursor: pointer;
+	color: var(--text-primary);
+	width: 30px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.mobile-nav {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 30px;
+}
+
+.mobile-nav a {
+	font-size: 18px;
+	font-weight: 500;
+	padding: 15px 0;
+	border-bottom: 1px solid var(--border-color);
+	transition: color var(--transition-medium);
+	opacity: 0;
+	transform: translateY(20px);
+	transition: opacity var(--transition-medium),
+		transform var(--transition-medium), color var(--transition-medium);
+}
+
+.mobile-nav a.appear {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.mobile-nav a:hover {
+	color: var(--main-blue);
+}
+
+.mobile-nav a.active {
+	color: var(--main-blue);
+}
+
+.mobile-contact {
+	margin-top: auto;
+	padding-top: 20px;
+}
+
+.mobile-social {
+	display: flex;
+	gap: 15px;
+	margin: 20px 0;
+}
+
+.mobile-consultation-btn {
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding: 15px;
+	margin-top: 20px;
+	border-radius: 8px;
+}
+
+/* --------------------------------------
+	 7. Основной контент
+	 -------------------------------------- */
+main {
+	margin: 0 auto;
+	padding: 2rem;
+	min-height: 50vh;
+}
+
+.text-container {
+	margin: 0 auto;
+	max-width: 87%;
+}
+
+/* Анимации для элементов */
+.fade-in {
+	opacity: 0;
+	transform: translateY(20px);
+	transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in.animated {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+/* --------------------------------------
+	 8. Футер
+	 -------------------------------------- */
+.footer {
+	position: relative;
+	overflow: hidden;
+	padding: 60px 0;
+	padding-top: 203px;
+	margin: 0 auto;
+}
+
+.footer-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 650px;
+	gap: 0;
+}
+
+/* Левая часть */
+.footer-left {
+	max-width: 822px;
+}
+
+.footer-nav {
+	display: flex;
+	gap: 207px;
+	margin-bottom: 100px;
+	padding-left: 38px;
+	padding-top: 64px;
+}
+
+.nav-column {
+	display: flex;
+	flex-direction: column;
+	gap: 21px;
+}
+
+.nav-column a {
+	color: var(--text-primary);
+	text-decoration: none;
+	font-size: 30px;
+	font-weight: 500;
+	transition: color var(--transition-medium);
+}
+
+.nav-column a:hover {
+	color: var(--main-blue);
+}
+
+/* Контакты */
+.contacts-row {
+	display: flex;
+	gap: 80px;
+	margin-bottom: 30px;
+}
+
+.address-row {
+	display: flex;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid var(--border-color);
+}
+
+.contact-item h4 {
+	font-size: 35px;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+
+.contact-item p {
+	font-size: 30px;
+	font-weight: 400;
+}
+
+.schedule {
+	margin-left: -17px;
+}
+
+.address-left {
+	flex: 1;
+	max-width: 500px;
+}
+
+/* Соцсети */
+.social-dots {
+	display: flex;
+	gap: 12px;
+	margin-top: 122px;
+	margin-left: 157px;
+}
+
+.dot {
+	width: 50px;
+	height: 50px;
+	transition: transform var(--transition-medium);
+}
+
+.social-dots a:hover .dot {
+	transform: scale(1.1);
+}
+
+/* Копирайт */
+.copyright {
+	font-size: 14px;
+	color: var(--text-tertiary);
+	padding-top: 10px;
+}
+
+.footer-info {
+	padding-top: 128px;
+	padding-left: 37px;
+}
+
+/* Форма справа */
+.footer-form {
+	background: var(--main-blue);
+	border-radius: 30px 0 0 30px;
+	padding: 60px;
+	color: white;
+	position: relative;
+	height: 1155px;
+	padding-left: 68px;
+	padding-top: 96px;
+}
+
+.footer-form::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 99.9%;
+	width: 100vw;
+	height: 100%;
+	background: var(--main-blue);
+}
+
+.form-header h2 {
+	font-size: 50px;
+	font-weight: 900;
+	line-height: 1.2;
+	margin-bottom: 15px;
+}
+
+.form-header p {
+	font-size: 50px;
+	font-weight: 300;
+	line-height: 1.2;
+	margin-bottom: 40px;
+	margin-top: -22px;
+}
+
+.form-header p span {
+	font-weight: 700;
+}
+
+.min-order {
+	font-size: 20px;
+	color: #ffffff;
+	margin-bottom: 40px;
+	font-weight: 400;
+	margin-top: 88px;
+	max-width: 230px;
+	line-height: 1.2;
+}
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.footer-form input {
+	height: var(--input-height);
+	width: 367px;
+	border-radius: 15px;
+	border: none;
+	padding: 0 25px;
+	font-size: 20px;
+	font-weight: 300;
+	font-family: Montserrat, sans-serif;
+}
+
+.footer-form input:nth-child(1) {
+	margin-top: 64px;
+}
+
+.footer-form input:nth-child(2) {
+	margin-top: 4px;
+}
+
+.submit-btn {
+	height: var(--input-height);
+	width: 367px;
+	background: #000;
+	color: white;
+	border: none;
+	border-radius: 15px;
+	font-size: 20px;
+	font-weight: 300;
+	font-family: Montserrat, sans-serif;
+	margin-top: 5px;
+	transition: background-color var(--transition-medium);
+}
+
+.submit-btn:hover {
+	background: #333;
+}
+
+.footer-image img {
+	position: absolute;
+	left: 383px;
+	bottom: 0px;
+	z-index: 1;
+}

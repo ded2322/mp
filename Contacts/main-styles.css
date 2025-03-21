@@ -1,0 +1,207 @@
+main {
+	margin: 0 auto;
+	padding: 2rem;
+}
+
+.heading {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
+	font-size: 70px;
+	line-height: 1.2;
+	letter-spacing: 0;
+	margin-bottom: 80px;
+	text-align: center;
+	padding-top: 76px;
+}
+
+/* New contact page styles */
+.contacts-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.contacts-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 80px;
+	margin: 0 auto;
+}
+
+.contact-column {
+	display: flex;
+	flex-direction: column;
+	gap: 60px;
+}
+
+.contact-block {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.contact-title {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 35px;
+	line-height: 1.2;
+	margin: 0;
+}
+
+.contact-info-text {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 1.5;
+	color: #000;
+	text-decoration: none;
+	margin: 0;
+}
+
+.contact-info-text.schedule {
+	margin-top: 5px;
+	margin-left: 0; /* Убираем возможное смещение влево */
+	padding-left: 0; /* Убираем возможные отступы */
+}
+
+/* Main Content Adaptive Styles */
+
+/* Desktop Adjustments */
+@media screen and (max-width: 1450px) {
+	.heading {
+		font-size: 60px;
+		line-height: 70px;
+		padding-top: 60px;
+		margin-bottom: 60px;
+	}
+
+	.contacts-grid {
+		gap: 60px;
+	}
+
+	.contact-column {
+		gap: 50px;
+	}
+
+	.contact-title {
+		font-size: 30px;
+	}
+
+	.contact-info-text {
+		font-size: 26px;
+		line-height: 1.4;
+	}
+}
+
+/* Laptop Adjustments */
+@media screen and (max-width: 1200px) {
+	.heading {
+		font-size: 50px;
+		line-height: 60px;
+		padding-top: 50px;
+		margin-bottom: 50px;
+	}
+
+	.contacts-container {
+		max-width: 900px;
+	}
+
+	.contacts-grid {
+		gap: 40px;
+	}
+
+	.contact-column {
+		gap: 40px;
+	}
+
+	.contact-title {
+		font-size: 26px;
+	}
+
+	.contact-info-text {
+		font-size: 22px;
+		line-height: 1.3;
+	}
+}
+
+/* Tablet Adjustments */
+@media screen and (max-width: 992px) {
+	main {
+		padding: 1.5rem;
+	}
+
+	.heading {
+		font-size: 42px;
+		line-height: 50px;
+		padding-top: 40px;
+		margin-bottom: 40px;
+	}
+
+	.contacts-container {
+		max-width: 100%;
+	}
+
+	.contact-title {
+		font-size: 24px;
+	}
+
+	.contact-info-text {
+		font-size: 20px;
+		line-height: 1.3;
+	}
+}
+
+/* Mobile Adjustments */
+@media screen and (max-width: 768px) {
+	main {
+		padding: 1rem;
+	}
+
+	.heading {
+		font-size: 36px;
+		line-height: 44px;
+		padding-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	.contacts-grid {
+		grid-template-columns: 1fr;
+		gap: 30px;
+	}
+
+	.contact-column {
+		gap: 30px;
+	}
+
+	.contact-title {
+		font-size: 22px;
+	}
+
+	.contact-info-text {
+		font-size: 18px;
+		line-height: 1.3;
+	}
+}
+
+/* Small Mobile Adjustments */
+@media screen and (max-width: 480px) {
+	.heading {
+		font-size: 30px;
+		line-height: 36px;
+		padding-top: 25px;
+		margin-bottom: 25px;
+	}
+
+	.contact-column {
+		gap: 25px;
+	}
+
+	.contact-title {
+		font-size: 20px;
+	}
+
+	.contact-info-text {
+		font-size: 16px;
+		line-height: 1.3;
+	}
+}

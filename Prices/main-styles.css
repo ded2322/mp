@@ -1,0 +1,190 @@
+/* Основные стили для страницы цен */
+
+main {
+	margin: 0 auto;
+	padding: 2rem;
+}
+
+.heading {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
+	font-size: 70px;
+	line-height: 1.2;
+	letter-spacing: 0;
+	margin-bottom: 2rem;
+	text-align: center;
+	padding-top: 76px;
+}
+
+.text-container {
+    max-width: 1373px;
+    margin: 0 auto;
+    padding-top: 152px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 119px;
+    gap: 100px; /* Отступ между элементами по горизонтали */
+}
+
+.service-item {
+    display: flex;
+    flex-direction: row; /* Горизонтальное расположение - иконка слева, текст справа */
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+}
+
+.service-icon {
+    width: 70px;
+    height: 70px;
+    margin-right: 20px; /* Отступ между иконкой и текстом */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 50px; /* Размер текста по шаблону */
+    line-height: 1.2;
+    margin: 0;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+/* Адаптивные стили */
+@media screen and (max-width: 1450px) {
+    .heading {
+        font-size: 60px;
+        padding-top: 60px;
+    }
+    
+    .text-container {
+        padding-top: 120px;
+    }
+    
+    .row {
+        gap: 80px;
+        margin-bottom: 90px;
+    }
+    
+    .service-name {
+        font-size: 42px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .heading {
+        font-size: 50px;
+        padding-top: 50px;
+    }
+    
+    .text-container {
+        padding-top: 100px;
+    }
+    
+    .row {
+        gap: 60px;
+        margin-bottom: 70px;
+    }
+    
+    .service-name {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .heading {
+        font-size: 42px;
+        padding-top: 40px;
+    }
+    
+    .text-container {
+        padding-top: 80px;
+    }
+    
+    .row {
+        flex-wrap: wrap;
+        gap: 50px;
+        margin-bottom: 60px;
+        justify-content: space-around;
+    }
+    
+    .service-name {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        padding: 1.5rem 1rem;
+    }
+    
+    .heading {
+        font-size: 36px;
+        padding-top: 30px;
+        margin-bottom: 1.5rem;
+    }
+    
+    .text-container {
+        padding-top: 60px;
+    }
+    
+    .row {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        margin-bottom: 50px;
+    }
+    
+    .service-item {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .service-icon {
+        min-width: 50px;
+    }
+    
+    .service-name {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .heading {
+        font-size: 32px;
+        padding-top: 20px;
+    }
+    
+    .text-container {
+        padding-top: 40px;
+    }
+    
+    .row {
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+    
+    .service-item {
+        max-width: 320px;
+    }
+    
+    .service-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .service-name {
+        font-size: 20px;
+    }
+}

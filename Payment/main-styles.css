@@ -1,0 +1,530 @@
+main {
+	margin: 0 auto;
+	padding: 2rem;
+}
+
+.heading {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
+	font-size: 70px;
+	line-height: 25.6px;
+	letter-spacing: 0;
+	margin-bottom: 2rem;
+	text-align: center;
+	padding-top: 76px;
+}
+
+.main-conteiner {
+	max-width: 1920px;
+	margin: 0 auto;
+}
+
+.description {
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 40px;
+	margin-bottom: 50px;
+	max-width: 1755px;
+	padding-left: 148px;
+	padding-top: 131px;
+}
+
+.steps {
+	display: flex;
+	position: relative;
+	justify-content: space-between;
+	margin: 0 auto;
+	margin-top: 170px;
+	max-width: 1346px;
+}
+
+.steps::before {
+	content: '';
+	position: absolute;
+	top: 45px;
+	left: 50px;
+	right: 50px;
+	height: 1px;
+	background: #000;
+}
+
+.step {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 170px;
+	position: relative;
+	z-index: 1;
+}
+
+.step-circle {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: #000;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 35px;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+
+.step-text {
+	font-weight: 600;
+	font-size: 25px;
+	line-height: 35px;
+	text-align: center;
+	width: 100%;
+}
+
+.step-text-2 {
+	width: 150%;
+}
+.step-text-5 {
+	width: 200%;
+}
+
+.payment-section {
+	margin-top: 201px;
+	margin-left: 151px;
+	max-width: 1600px;
+}
+
+.payment-title {
+	font-weight: 700;
+	font-size: 35px;
+	line-height: 35px;
+	margin-bottom: 20px;
+}
+
+.payment-description {
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 35px;
+	margin-bottom: 50px;
+}
+
+.company-name {
+	font-weight: 700;
+	font-size: 35px;
+	line-height: 35px;
+	text-align: center;
+	margin-top: 212px;
+	margin-bottom: 111px;
+}
+
+table {
+	width: 80%;
+	border-collapse: collapse;
+	margin: 0 auto;
+}
+
+td {
+	border: 1px solid #000;
+	padding: 15px;
+	vertical-align: top;
+}
+
+td:first-child {
+	width: 30%;
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 35px;
+	background: #fff;
+}
+
+td:last-child {
+	font-weight: 500;
+	font-size: 25px;
+	line-height: 35px;
+}
+
+/* Desktop Adjustments */
+@media screen and (max-width: 1450px) {
+	.heading {
+		font-size: 60px;
+		padding-top: 60px;
+	}
+
+	.description {
+		font-size: 25px;
+		line-height: 35px;
+		padding-left: 100px;
+		padding-top: 100px;
+		max-width: 1500px;
+	}
+
+	.steps {
+		margin-top: 120px;
+		max-width: 1200px;
+	}
+
+	.step-circle {
+		width: 90px;
+		height: 90px;
+		font-size: 30px;
+	}
+
+	.step-text {
+		font-size: 22px;
+		line-height: 30px;
+	}
+
+	.payment-section {
+		margin-top: 150px;
+		margin-left: 100px;
+	}
+
+	.payment-title {
+		font-size: 30px;
+	}
+
+	.payment-description {
+		font-size: 25px;
+		line-height: 30px;
+	}
+
+	.company-name {
+		font-size: 30px;
+		margin-top: 150px;
+		margin-bottom: 80px;
+	}
+
+	td:first-child {
+		font-size: 22px;
+		line-height: 30px;
+	}
+
+	td:last-child {
+		font-size: 22px;
+		line-height: 30px;
+	}
+}
+
+/* Laptop Adjustments */
+@media screen and (max-width: 1200px) {
+	.heading {
+		font-size: 50px;
+		padding-top: 50px;
+	}
+
+	.description {
+		font-size: 22px;
+		line-height: 30px;
+		padding-left: 60px;
+		padding-top: 80px;
+	}
+
+	.steps {
+		margin-top: 100px;
+		max-width: 900px;
+	}
+
+	.steps::before {
+		top: 35px;
+		left: 40px;
+		right: 40px;
+	}
+
+	.step {
+		width: 150px;
+	}
+
+	.step-circle {
+		width: 80px;
+		height: 80px;
+		font-size: 26px;
+	}
+
+	.step-text {
+		font-size: 18px;
+		line-height: 25px;
+	}
+
+	.payment-section {
+		margin-top: 120px;
+		margin-left: 60px;
+	}
+
+	.payment-title {
+		font-size: 28px;
+	}
+
+	.payment-description {
+		font-size: 22px;
+		line-height: 28px;
+	}
+
+	.company-name {
+		font-size: 28px;
+		margin-top: 120px;
+		margin-bottom: 60px;
+	}
+
+	table {
+		width: 90%;
+	}
+
+	td {
+		padding: 12px;
+	}
+
+	td:first-child {
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+	td:last-child {
+		font-size: 20px;
+		line-height: 28px;
+	}
+}
+
+/* Tablet Adjustments */
+@media screen and (max-width: 992px) {
+	.heading {
+		font-size: 42px;
+		padding-top: 40px;
+		line-height: 1.2;
+	}
+
+	.description {
+		font-size: 20px;
+		line-height: 28px;
+		padding-left: 30px;
+		padding-top: 60px;
+		margin-bottom: 30px;
+	}
+
+	.steps {
+		margin-top: 80px;
+		max-width: 100%;
+		padding: 0 20px;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 40px;
+	}
+
+	.steps::before {
+		display: none; /* Remove the connecting line on tablets */
+	}
+
+	.step {
+		width: 140px;
+	}
+
+	.step-circle {
+		width: 70px;
+		height: 70px;
+		font-size: 24px;
+	}
+
+	.step-text,
+	.step-text-2,
+	.step-text-5 {
+		font-size: 16px;
+		line-height: 22px;
+		width: 100%; /* Reset widths for all step texts */
+	}
+
+	.payment-section {
+		margin-top: 80px;
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+
+	.payment-title {
+		font-size: 24px;
+		line-height: 30px;
+	}
+
+	.payment-description {
+		font-size: 20px;
+		line-height: 26px;
+	}
+
+	.company-name {
+		font-size: 24px;
+		line-height: 30px;
+		margin-top: 80px;
+		margin-bottom: 40px;
+		padding: 0 20px;
+	}
+
+	table {
+		width: 95%;
+	}
+
+	td {
+		padding: 10px;
+	}
+
+	td:first-child {
+		font-size: 18px;
+		line-height: 24px;
+	}
+
+	td:last-child {
+		font-size: 18px;
+		line-height: 24px;
+	}
+}
+
+/* Mobile Adjustments */
+@media screen and (max-width: 768px) {
+	main {
+		padding: 1rem;
+	}
+
+	.heading {
+		font-size: 36px;
+		padding-top: 30px;
+		margin-bottom: 1.5rem;
+	}
+
+	.description {
+		font-size: 18px;
+		line-height: 26px;
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-top: 40px;
+		margin-bottom: 20px;
+		text-align: left;
+	}
+
+	.steps {
+		margin-top: 60px;
+		flex-direction: column;
+		align-items: center;
+		gap: 30px;
+	}
+
+	.step {
+		width: 100%;
+		max-width: 300px;
+		flex-direction: row;
+		justify-content: flex-start;
+		gap: 15px;
+	}
+
+	.step-circle {
+		width: 60px !important;
+		height: 60px !important;
+		min-width: 60px; /* Prevent shrinking */
+		min-height: 60px; /* Prevent shrinking */
+		font-size: 20px;
+		margin-bottom: 0;
+	}
+
+	.step-text,
+	.step-text-2,
+	.step-text-5 {
+		font-size: 18px;
+		line-height: 24px;
+		text-align: left;
+	}
+
+	.payment-section {
+		margin-top: 60px;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+
+	.payment-title {
+		font-size: 22px;
+		line-height: 28px;
+	}
+
+	.payment-description {
+		font-size: 18px;
+		line-height: 24px;
+	}
+
+	.company-name {
+		font-size: 22px;
+		line-height: 28px;
+		margin-top: 60px;
+		margin-bottom: 30px;
+		padding: 0 15px;
+	}
+
+	table {
+		width: 100%;
+		display: block;
+		overflow-x: auto; /* Make table scrollable horizontally */
+	}
+
+	td {
+		padding: 8px;
+		min-width: 120px; /* Ensure cells don't get too narrow */
+	}
+
+	td:first-child {
+		font-size: 16px;
+		line-height: 22px;
+		width: auto; /* Let the content determine width */
+	}
+
+	td:last-child {
+		font-size: 16px;
+		line-height: 22px;
+	}
+}
+
+/* Small Mobile Adjustments */
+@media screen and (max-width: 480px) {
+	.heading {
+		font-size: 30px;
+		padding-top: 20px;
+	}
+
+	.description {
+		font-size: 16px;
+		line-height: 22px;
+		padding-top: 30px;
+	}
+
+	.step-circle {
+		width: 50px !important;
+		height: 50px !important;
+		font-size: 18px;
+		min-width: 50px; /* Prevent shrinking */
+		min-height: 50px; /* Prevent shrinking */
+	}
+
+	.step-text,
+	.step-text-2,
+	.step-text-5 {
+		font-size: 16px;
+		line-height: 22px;
+	}
+
+	.payment-title {
+		font-size: 20px;
+		line-height: 26px;
+	}
+
+	.payment-description {
+		font-size: 16px;
+		line-height: 22px;
+	}
+
+	.company-name {
+		font-size: 20px;
+		line-height: 26px;
+		margin-top: 40px;
+		margin-bottom: 25px;
+	}
+
+	td:first-child {
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	td:last-child {
+		font-size: 14px;
+		line-height: 20px;
+	}
+}

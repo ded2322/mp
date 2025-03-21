@@ -1,0 +1,408 @@
+/* Main content styles */
+main {
+	margin: 0 auto;
+	padding: 0 2rem;
+	max-width: 1200px;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* Heading styles */
+.heading {
+	font-size: 41.26px;
+	font-weight: 800;
+	text-align: center;
+	margin-bottom: 40px;
+	margin-top: 40px;
+	text-transform: uppercase;
+	font-family: Montserrat;
+	line-height: 53.64px;
+	letter-spacing: 0%;
+}
+
+/* Pricing table styles */
+.pricing-table {
+	margin: 0 auto;
+	width: 100%;
+	overflow-x: auto;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.pricing-table table {
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+.pricing-table th,
+.pricing-table td {
+	padding: 12px 10px;
+	text-align: center;
+	font-size: 20.63px;
+	font-weight: 400;
+	line-height: 33.01px;
+	vertical-align: middle;
+}
+
+.pricing-table .header-row {
+	background-color: #f5f5f5;
+}
+
+.pricing-table .header-cell {
+	font-weight: 500;
+	font-size: 20.63px;
+	padding: 15px 10px;
+}
+
+.pricing-table tbody tr:nth-child(odd):not(.spacer-row) {
+	background-color: #f5f5f5;
+}
+
+.pricing-table tbody tr:nth-child(even):not(.spacer-row) {
+	background-color: #ffffff;
+}
+
+.pricing-table .first-column {
+	font-weight: 500;
+}
+
+.pricing-table .spacer-row {
+	height: 10px;
+	background-color: transparent;
+}
+
+.pricing-table .spacer-row td {
+	padding: 5px 0;
+}
+
+/* Minimum order note */
+.min-order-note {
+	text-align: center;
+	font-weight: 400;
+	font-size: 20.47px;
+	line-height: 33.01px;
+	margin: 25px 0;
+	color: #000;
+	letter-spacing: 0%;
+}
+
+/* Button styles */
+.button-container {
+	text-align: center;
+	margin: 30px 0 50px;
+}
+
+.request-btn {
+	display: inline-block;
+	width: 368px;
+	height: 60px;
+	border-radius: 10px;
+	font-family: Montserrat;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 60px;
+	padding: 0;
+	text-align: center;
+	background-color: #3988ff;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.request-btn:hover {
+	background-color: #1560db;
+}
+
+/* Pricing info styles */
+.pricing-info {
+	max-width: 100%;
+	margin: 40px 0;
+	font-size: 20.47px;
+	line-height: 33.01px;
+	color: #000;
+	letter-spacing: 0%;
+}
+
+.info-title {
+	font-size: 20.47px;
+	font-weight: 500;
+	margin-bottom: 15px;
+	line-height: 33.01px;
+}
+
+.pricing-info p {
+	margin-bottom: 10px;
+}
+
+.info-section {
+	margin: 20px 0;
+}
+
+.section-title {
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+
+.pricing-info ul {
+	list-style-type: none;
+	padding-left: 0;
+	margin-bottom: 15px;
+}
+
+.pricing-info li {
+	position: relative;
+	padding-left: 20px;
+	margin-bottom: 8px;
+	font-size: 20.47px;
+	line-height: 33.01px;
+}
+
+.pricing-info li::before {
+	content: '•';
+	position: absolute;
+	left: 5px;
+	top: 0;
+}
+
+/* Separator */
+.separator {
+	height: 1px;
+	background-color: #e0e0e0;
+	margin: 30px 0;
+	width: 100%;
+}
+
+/* Pricing description */
+.pricing-description {
+	text-align: center;
+	font-size: 20.47px;
+	line-height: 33.01px;
+	margin: 25px 0;
+	font-weight: 400;
+	letter-spacing: 0%;
+}
+
+/* Main content about silkscreen printing */
+.section-container {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.main-title {
+	font-size: 20.63px;
+	font-weight: 700;
+	margin-bottom: 30px;
+	line-height: 33.01px;
+	letter-spacing: 0%;
+}
+
+.paragraph {
+	font-size: 20px;
+	line-height: 35px;
+	margin-bottom: 20px;
+	color: #000;
+	font-weight: 400;
+	letter-spacing: 0%;
+}
+
+.subheading {
+	font-size: 20.63px;
+	font-weight: 700;
+	margin-top: 35px;
+	margin-bottom: 20px;
+	color: #000;
+	line-height: 33.01px;
+	letter-spacing: 0%;
+}
+
+.faq-question {
+	font-size: 20px;
+	font-weight: 700;
+	font-style: italic;
+	margin-top: 25px;
+	margin-bottom: 15px;
+	color: #000;
+	line-height: 35px;
+}
+
+.faq-answer {
+	font-size: 20px;
+	line-height: 35px;
+	margin-bottom: 25px;
+	color: #000;
+	font-weight: 400;
+}
+
+/* Bottom separator */
+.bottom-separator {
+	height: 1px;
+	background-color: #e0e0e0;
+	margin: 40px 0 30px;
+	width: 100%;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1200px) {
+	.heading {
+		font-size: 36px;
+		line-height: 46px;
+	}
+
+	.pricing-table th,
+	.pricing-table td {
+		font-size: 18px;
+		line-height: 28px;
+		padding: 10px 8px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.heading {
+		font-size: 32px;
+		line-height: 42px;
+		margin-bottom: 30px;
+	}
+
+	.pricing-table {
+		overflow-x: auto;
+	}
+
+	.pricing-table table {
+		min-width: 800px;
+	}
+
+	.request-btn {
+		width: 320px;
+	}
+
+	.pricing-info,
+	.pricing-description,
+	.min-order-note,
+	.info-title,
+	.pricing-info li {
+		font-size: 18px;
+		line-height: 30px;
+	}
+
+	.paragraph,
+	.faq-question,
+	.faq-answer,
+	.main-title,
+	.subheading {
+		font-size: 18px;
+		line-height: 30px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	main {
+		padding: 0 15px;
+	}
+
+	.heading {
+		font-size: 28px;
+		line-height: 36px;
+		margin-bottom: 25px;
+	}
+
+	.request-btn {
+		width: 280px;
+		height: 50px;
+		line-height: 50px;
+		font-size: 18px;
+	}
+
+	.button-container {
+		margin: 25px 0 40px;
+	}
+
+	.pricing-info,
+	.pricing-description,
+	.min-order-note,
+	.info-title,
+	.pricing-info li {
+		font-size: 16px;
+		line-height: 26px;
+	}
+
+	.paragraph,
+	.faq-question,
+	.faq-answer,
+	.main-title,
+	.subheading {
+		font-size: 16px;
+		line-height: 26px;
+	}
+
+	.info-section {
+		margin: 15px 0;
+	}
+
+	.section-container {
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.heading {
+		font-size: 24px;
+		line-height: 32px;
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}
+
+	.pricing-table table {
+		min-width: 700px; /* Force horizontal scroll on very small screens */
+	}
+
+	.request-btn {
+		width: 100%;
+		max-width: 250px;
+		height: 45px;
+		line-height: 45px;
+		font-size: 16px;
+	}
+
+	.pricing-info,
+	.pricing-description,
+	.min-order-note,
+	.info-title,
+	.pricing-info li {
+		font-size: 14px;
+		line-height: 24px;
+	}
+
+	.pricing-info li {
+		padding-left: 15px;
+	}
+
+	.pricing-info li::before {
+		left: 3px;
+	}
+
+	.paragraph,
+	.faq-question,
+	.faq-answer,
+	.main-title,
+	.subheading {
+		font-size: 14px;
+		line-height: 24px;
+	}
+
+	.separator,
+	.bottom-separator {
+		margin: 20px 0;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.pricing-table th,
+	.pricing-table td {
+		font-size: 14px;
+		line-height: 20px;
+		padding: 8px 6px;
+	}
+}

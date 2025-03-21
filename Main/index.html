@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Merch Production</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="header-styles.css" />
+		<link rel="stylesheet" href="main-styles.css" />
+		<link rel="stylesheet" href="footer-styles.css" />
+		<link rel="stylesheet" href="mobile-menu-styles.css" />
+
+		<!-- Favicon links -->
+		<link
+			rel="apple-touch-icon"
+			sizes="57x57"
+			href="../Favicon/apple-icon-57x57.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="60x60"
+			href="../Favicon/apple-icon-60x60.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="72x72"
+			href="../Favicon/apple-icon-72x72.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="76x76"
+			href="../Favicon/apple-icon-76x76.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="114x114"
+			href="../Favicon/apple-icon-114x114.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="120x120"
+			href="../Favicon/apple-icon-120x120.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="144x144"
+			href="../Favicon/apple-icon-144x144.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="152x152"
+			href="../Favicon/apple-icon-152x152.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="../Favicon/apple-icon-180x180.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="192x192"
+			href="../Favicon/android-icon-192x192.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="../Favicon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="96x96"
+			href="../Favicon/favicon-96x96.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="../Favicon/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="../Favicon/manifest.json" />
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta
+			name="msapplication-TileImage"
+			content="../Favicon/ms-icon-144x144.png"
+		/>
+		<meta name="theme-color" content="#ffffff" />
+	</head>
+	<body>
+		<div class="page-wrapper">
+			<header class="header">
+				<div class="container header-container">
+					<a href="/MerchProduction/Main/" class="logo">
+						MERCH<span class="logo-light">PRODUCTION</span>
+					</a>
+					<nav class="nav">
+						<a href="/MerchProduction/About us/">О НАС</a>
+						<a href="/MerchProduction/Catalog/">КАТАЛОГ</a>
+						<a href="/MerchProduction/Cases/">КЕЙСЫ</a>
+						<a href="/MerchProduction/Prices/">ЦЕНЫ</a>
+						<a href="/MerchProduction/Contacts/">КОНТАКТЫ</a>
+					</nav>
+					<div class="contact-info">
+						<a href="tel:84993228207" class="phone">8 (499) 322-82-07</a>
+						<a href="#">
+							<img class="img-t-w" src="./sources/telega.svg" alt="telega" />
+						</a>
+						<a
+							href="https://wa.me/84993228207?text=Добрый%20день%2C%20я%20по%20поводу..."
+						>
+							<img
+								class="img-t-w"
+								src="./sources/whatsapp.svg"
+								alt="whatsapp"
+							/>
+						</a>
+						<a href="https://wa.me/84993228207?text=Добрый%20день%2C%20я%20по%20поводу..." class="consultation-btn">
+							Получить консультацию
+						</a>
+					</div>
+
+					<!-- Кнопка мобильного меню -->
+					<button class="mobile-menu-btn" id="mobileMenuBtn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</div>
+			</header>
+
+			<!-- Мобильное меню -->
+			<div class="mobile-menu" id="mobileMenu">
+				<div class="mobile-menu-header">
+					<a href="/MerchProduction/Main/" class="logo">
+						MERCH<span class="logo-light">PRODUCTION</span>
+					</a>
+					<button class="close-menu-btn" id="closeMenuBtn">✕</button>
+				</div>
+				<nav class="mobile-nav">
+					<a href="/MerchProduction/About us/">О НАС</a>
+					<a href="/MerchProduction/Catalog/">КАТАЛОГ</a>
+					<a href="/MerchProduction/Cases/">КЕЙСЫ</a>
+					<a href="/MerchProduction/Prices/">ЦЕНЫ</a>
+					<a href="/MerchProduction/Contacts/">КОНТАКТЫ</a>
+				</nav>
+				<div class="mobile-contact">
+					<a href="tel:84993228207" class="phone">8 (499) 322-82-07</a>
+					<div class="mobile-social">
+						<a href="#">
+							<img src="./sources/telega.svg" alt="telega" />
+						</a>
+						<a
+							href="https://wa.me/84993228207?text=Добрый%20день%2C%20я%20по%20поводу..."
+						>
+							<img src="./sources/whatsapp.svg" alt="whatsapp" />
+						</a>
+					</div>
+					<a
+						href="#consultation"
+						class="consultation-btn mobile-consultation-btn"
+					>
+						Получить консультацию
+					</a>
+				</div>
+			</div>
+
+			<main>
+				<section class="hero">
+					<div class="container hero-container">
+						<div class="hero-text">
+							<h1 class="hero-title">
+								Мы превращаем<br />ваш бренд в<br />премиальный<br />мерч.
+							</h1>
+							<p class="hero-subtitle">
+								Мы берём на себя всё: от идеи до готового изделия. Удобно,
+								быстро и качественно
+							</p>
+							<div class="cta-buttons">
+								<a href="https://wa.me/84993228207?text=Добрый%20день%2C%20я%20по%20поводу..." class="primary-btn">Оставить заявку</a>
+								<a href="/MerchProduction/PricesPoshiv/" class="secondary-btn">
+									Рассчитать стоимость
+								</a>
+							</div>
+						</div>
+						<div class="model-photos">
+							<img src="./sources/base-merch-two-pers.svg" alt="model-photos" />
+						</div>
+					</div>
+				</section>
+				<section class="why-us">
+					<div class="container">
+						<h2 class="section-title">ПОЧЕМУ ВЫБИРАЮТ НАС?</h2>
+						<div class="features-grid">
+							<div class="feature-first">
+								<h3 class="feature-title feature-title-first">
+									1. СОБСТВЕННОЕ ПРОИЗВОДСТВО
+								</h3>
+								<p class="feature-description feature-description-first">
+									Мы полностью контролируем каждый этап: от выбора материалов до
+									финальной упаковки
+								</p>
+							</div>
+							<div class="feature-second">
+								<h3 class="feature-title feature-title-second">
+									2. МИНИМАЛЬНЫЙ ЗАКАЗ ОТ
+									<span class="feature-span-second">100 ЕДИНИЦ</span>
+								</h3>
+								<p
+									class="feature-description feature-description feature-description-second"
+								>
+									Оптимальное решение для крупных и средних проектов
+								</p>
+							</div>
+							<div class="feature-first">
+								<h3 class="feature-title feature-title-third">
+									3. ПОЛНЫЙ ЦИКЛ — ОТ ИДЕИ
+									<span class="feature-span-third">ДО ГОТОВОГО ПРОДУКТА</span>
+								</h3>
+								<p class="feature-description feature-description-third">
+									Берём на себя всё: от разработки дизайна до производства и
+									доставки
+								</p>
+							</div>
+							<div class="feature-second">
+								<h3 class="feature-title feature-title-fourth">
+									4. ДОСТАВКА ПО ВСЕМУ
+									<span class="feature-span-fourth">МИРУ</span>
+								</h3>
+								<p class="feature-description feature-description-fourth">
+									Ваш мерч прибудет вовремя в любую точку планеты
+								</p>
+							</div>
+						</div>
+						<div class="text-center">
+							<a href="MerchProduction/Main/About us/" class="learn-more-btn">УЗНАТЬ БОЛЬШЕ</a>
+						</div>
+					</div>
+				</section>
+
+				<section class="workflow">
+					<div class="container">
+						<h2 class="section-title">КАК МЫ РАБОТАЕМ?</h2>
+						<div class="workflow-wrapper">
+							<div class="workflow-items">
+								<div class="workflow-items-row-first">
+									<div class="workflow-item-first">
+										<h3 class="workflow-title">Оставляете заявку</h3>
+										<p class="workflow-description">
+											Расскажите нам о своём проекте, и мы сразу приступим к
+											работе
+										</p>
+									</div>
+									<div class="workflow-item-first">
+										<h3 class="workflow-title">Утверждаем макет</h3>
+										<p class="workflow-description">
+											Разрабатываем и согласовываем дизайн до мельчайших деталей
+										</p>
+									</div>
+									<div class="workflow-item-first">
+										<h3 class="workflow-title">Производим мерч</h3>
+										<p class="workflow-description">
+											Печатаем, шьём и контролируем качество на каждом этапе
+										</p>
+									</div>
+								</div>
+								<div class="workflow-items-row-second">
+									<div class="workflow-item-second">
+										<h3 class="workflow-title">Упаковываем и доставляем</h3>
+										<p class="workflow-description">
+											Аккуратно упаковываем и отправляем заказ в любую точку
+											мира
+										</p>
+									</div>
+									<div class="workflow-item-second workflow-item-second-s">
+										<h3 class="workflow-title">Вы получаете готовый продукт</h3>
+										<p class="workflow-description">
+											Готовый мерч, который отражает стиль вашего бренда
+										</p>
+									</div>
+								</div>
+							</div>
+							<a href="https://wa.me/84993228207?text=Добрый%20день%2C%20я%20по%20поводу..." class="btn-submit">ОСТАВИТЬ ЗАЯВКУ</a>
+						</div>
+					</div>
+					<div class="ticker">
+						<div class="ticker-wrapper">
+							<div class="ticker-item">MERCH<b>PRODUCTION</b><b> • </b></div>
+							<div class="ticker-item">MERCH<b>PRODUCTION</b><b> • </b></div>
+							<div class="ticker-item">MERCH<b>PRODUCTION</b><b> • </b></div>
+							<div class="ticker-item">MERCH<b>PRODUCTION</b><b> • </b></div>
+							<div class="ticker-item">MERCH<b>PRODUCTION</b><b> • </b></div>
+							<div class="ticker-item">MERCH<b>PRODUCTION</b><b> • </b></div>
+							<div class="ticker-item">MERCH<b>PRODUCTION</b><b> • </b></div>
+							<div class="ticker-item">MERCH<b>PRODUCTION</b><b> • </b></div>
+							<div class="ticker-item">MERCH<b>PRODUCTION</b><b> • </b></div>
+							<div class="ticker-item">MERCH<b>PRODUCTION</b><b> • </b></div>
+							<div class="ticker-item">MERCH<b>PRODUCTION</b><b> • </b></div>
+							<div class="ticker-item">MERCH<b>PRODUCTION</b><b> • </b></div>
+							<div class="ticker-item">MERCH<b>PRODUCTION</b><b> • </b></div>
+							<div class="ticker-item">MERCH<b>PRODUCTION</b><b> • </b></div>
+							<div class="ticker-item">MERCH<b>PRODUCTION</b><b> • </b></div>
+							<div class="ticker-item">MERCH<b>PRODUCTION</b><b> • </b></div>
+							<div class="ticker-item">MERCH<b>PRODUCTION</b><b> • </b></div>
+							<div class="ticker-item">MERCH<b>PRODUCTION</b><b> • </b></div>
+							<div class="ticker-item">MERCH<b>PRODUCTION</b><b> • </b></div>
+							<div class="ticker-item">MERCH<b>PRODUCTION</b><b> • </b></div>
+							<div class="ticker-item">MERCH<b>PRODUCTION</b><b> • </b></div>
+							<div class="ticker-item">MERCH<b>PRODUCTION</b><b> • </b></div>
+							<div class="ticker-item">MERCH<b>PRODUCTION</b><b> • </b></div>
+							<div class="ticker-item">MERCH<b>PRODUCTION</b><b> • </b></div>
+							<div class="ticker-item">MERCH<b>PRODUCTION</b><b> • </b></div>
+							<div class="ticker-item">MERCH<b>PRODUCTION</b><b> • </b></div>
+							<div class="ticker-item">MERCH<b>PRODUCTION</b><b> • </b></div>
+							<div class="ticker-item">MERCH<b>PRODUCTION</b><b> • </b></div>
+							<div class="ticker-item">MERCH<b>PRODUCTION</b><b> • </b></div>
+							<div class="ticker-item">MERCH<b>PRODUCTION</b><b> • </b></div>
+							<div class="ticker-item">MERCH<b>PRODUCTION</b><b> • </b></div>
+							<div class="ticker-item">MERCH<b>PRODUCTION</b><b> • </b></div>
+							<div class="ticker-item">MERCH<b>PRODUCTION</b><b> • </b></div>
+							<div class="ticker-item">MERCH<b>PRODUCTION</b><b> • </b></div>
+							<div class="ticker-item">MERCH<b>PRODUCTION</b><b> • </b></div>
+							<div class="ticker-item">MERCH<b>PRODUCTION</b><b> • </b></div>
+						</div>
+					</div>
+				</section>
+
+				<section class="catalog">
+					<div class="container">
+						<h2 class="section-title">КАТАЛОГ</h2>
+						<div class="catalog-rows">
+							<!-- Первый ряд -->
+							<div class="catalog-row">
+								<a href="/MerchProduction/Catalog-hudi/">
+									<div class="catalog-item">
+										<span class="number">1</span>
+										<h3>ХУДИ</h3>
+										<div class="item-image">
+											<img src="./sources/catalog-1.svg" alt="Худи" />
+										</div>
+									</div>
+								</a>
+								<a href="/MerchProduction/Catalog-football/">
+									<div class="catalog-item">
+										<span class="number">2</span>
+										<h3>ФУТБОЛКИ</h3>
+										<div class="item-image">
+											<img src="./sources/catalog-2.svg" alt="Футболки" />
+										</div>
+									</div>
+								</a>
+							</div>
+							<!-- Второй ряд -->
+							<div class="catalog-row">
+								<a href="/MerchProduction/Catalog-svitshots/">
+									<div class="catalog-item">
+										<span class="number">3</span>
+										<h3>СВИТШОТЫ</h3>
+										<div class="item-image">
+											<img src="./sources/catalog-3.svg" alt="Свитшоты" />
+										</div>
+									</div>
+								</a>
+								<a href="/MerchProduction/Catalog-bruki/">
+									<div class="catalog-item">
+										<span class="number">4</span>
+										<h3>БРЮКИ</h3>
+										<div class="item-image">
+											<img src="./sources/catalog-4.svg" alt="Брюки" />
+										</div>
+									</div>
+								</a>
+							</div>
+							<!-- Третий ряд -->
+							<div class="catalog-row">
+								<a href="/MerchProduction/Catalog-zhiletki/">
+									<div class="catalog-item">
+										<span class="number">5</span>
+										<h3>ЖИЛЕТКИ</h3>
+										<div class="item-image">
+											<img src="./sources/catalog-5.svg" alt="Жилетки" />
+										</div>
+									</div>
+								</a>
+								<a href="/MerchProduction/Catalog-bomb/">
+									<div class="catalog-item">
+										<span class="number">6</span>
+										<h3>БОМБЕРЫ</h3>
+										<div class="item-image">
+											<img src="./sources/catalog-6.svg" alt="Бомберы" />
+										</div>
+									</div>
+								</a>
+							</div>
+							<!-- Четвертый ряд -->
+							<div class="catalog-row catalog-row-three">
+								<a href="/MerchProduction/Catalog-longsliv/">
+									<div class="catalog-item">
+										<span class="number">7</span>
+										<h3>ЛОНГСЛИВЫ</h3>
+										<div class="item-image">
+											<img src="./sources/catalog-7.svg" alt="Лонгсливы" />
+										</div>
+									</div>
+								</a>
+								<a href="/MerchProduction/Catalog-baseball/">
+									<div class="catalog-item">
+										<span class="number">8</span>
+										<h3>БЕЙСБОЛКИ</h3>
+										<div class="item-image">
+											<img src="./sources/catalog-8.svg" alt="Бейсболки" />
+										</div>
+									</div>
+								</a>
+								<a href="/MerchProduction/Catalog-shop/">
+									<div class="catalog-item">
+										<span class="number">9</span>
+										<h3>ШОППЕРЫ</h3>
+										<div class="item-image">
+											<img src="./sources/catalog-9.svg" alt="Шопперы" />
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="text-center">
+							<a href="/MerchProduction/Catalog/" class="primary-btn"
+								>Перейти в каталог</a
+							>
+						</div>
+					</div>
+				</section>
+
+				<section class="quote">
+					<div class="container">
+						<div class="quote-container">
+							<div class="quote-line top"></div>
+							<blockquote>
+								<p>
+									Вдохновение, с которым мы создаем<br />
+									одежду и текстиль, принесет<br />
+									процветание вашему бизнесу!
+								</p>
+							</blockquote>
+							<div class="quote-line bottom"></div>
+							<span class="quote-mark">,,</span>
+						</div>
+					</div>
+				</section>
+
+				<section class="services">
+					<div class="container">
+						<h2 class="section-title">УСЛУГИ</h2>
+						<div class="services">
+							<div class="services-wrapper">
+								<div class="services-list">
+									<div class="service-item">
+										<h3>Индивидуальный пошив</h3>
+										<br />
+										<p>
+											Создаём одежду по вашим требованиям с участием дизайнеров,
+											конструкторов и технологов.
+										</p>
+									</div>
+									<div class="service-item">
+										<h3>Разработка лекал</h3>
+										<br />
+										<p>
+											Строим лекала по фото или образцу, отшиваем сигнальные
+											изделия перед производством.
+										</p>
+									</div>
+									<div class="service-item">
+										<h3>Дизайн и подбор</h3>
+										<br />
+										<p>
+											Разрабатываем дизайн и подбираем материалы из каталогов
+											или по карте Pantone.
+										</p>
+									</div>
+									<div class="service-item">
+										<h3>Брендирование</h3>
+										<br />
+										<p>
+											Наносим изображения любой сложности: шелкография, цифровая
+											печать, термотрансфер, вышивка.
+										</p>
+									</div>
+								</div>
+								<div class="services-image">
+									<img
+										src="./sources/services.svg"
+										alt="Швейное производство"
+									/>
+								</div>
+							</div>
+						</div>
+						<div class="text-center">
+							<a href="/MerchProduction/Services/" class="primary-btn">Получить услугу</a>
+						</div>
+					</div>
+				</section>
+
+				<section class="clients">
+					<div class="container">
+						<h2 class="section-title">НАШИ КЛИЕНТЫ</h2>
+					</div>
+					<div class="partners">
+						<div class="partners-wrapper">
+							<div class="marquee">
+								<div class="marquee-content">
+									<!-- Первый набор логотипов -->
+									<div class="partner-logo">
+										<img
+											src="./sources/adrenalinestadium.svg"
+											alt="Adrenaline Stadium"
+										/>
+									</div>
+									<div class="partner-logo">
+										<img src="./sources/box.svg" alt="Федерация бокса России" />
+									</div>
+									<div class="partner-logo">
+										<img src="./sources/studio21.svg" alt="Studio 21" />
+									</div>
+									<div class="partner-logo">
+										<img src="./sources/newradio.svg" alt="Новое Радио" />
+									</div>
+									<div class="partner-logo">
+										<img
+											src="./sources/sportdeparturemoscow.svg"
+											alt="Департамент спорта города Москвы"
+										/>
+									</div>
+									<div class="partner-logo">
+										<img src="./sources/first.svg" alt="Первый канал" />
+									</div>
+									<div class="partner-logo">
+										<img
+											src="./sources/moscowsport.svg"
+											alt="Московский спорт"
+										/>
+									</div>
+									<div class="partner-logo">
+										<img src="./sources/gshock.svg" alt="G-Shock" />
+									</div>
+
+									<!-- Дублируем логотипы для бесшовной анимации -->
+									<div class="partner-logo">
+										<img
+											src="./sources/adrenalinestadium.svg"
+											alt="Adrenaline Stadium"
+										/>
+									</div>
+									<div class="partner-logo">
+										<img src="./sources/box.svg" alt="Федерация бокса России" />
+									</div>
+									<div class="partner-logo">
+										<img src="./sources/studio21.svg" alt="Studio 21" />
+									</div>
+									<div class="partner-logo">
+										<img src="./sources/newradio.svg" alt="Новое Радио" />
+									</div>
+									<div class="partner-logo">
+										<img
+											src="./sources/sportdeparturemoscow.svg"
+											alt="Департамент спорта города Москвы"
+										/>
+									</div>
+									<div class="partner-logo">
+										<img src="./sources/first.svg" alt="Первый канал" />
+									</div>
+									<div class="partner-logo">
+										<img
+											src="./sources/moscowsport.svg"
+											alt="Московский спорт"
+										/>
+									</div>
+									<div class="partner-logo">
+										<img src="./sources/gshock.svg" alt="G-Shock" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="cases">
+					<div class="container">
+						<h2 class="section-title">НАШИ ПРОЕКТЫ</h2>
+						<div class="cases-flex">
+							<div class="cases-left">
+								<!-- Мерч для "Спартак -->
+								<article class="case-item case-item-1">
+									<h3>Мерч для "Спартак"</h3>
+									<div class="case-info">
+										<div class="case-description">
+											<h4>Идея:</h4>
+											<p class="case-description-first">
+												Сделать редкие толстовки, которые можно будет
+												использовать на наших играх
+											</p>
+										</div>
+										<div class="case-metrics">
+											<div class="metric-first-left metric">
+												<h4>Срок выполнения:</h4>
+												<p>7 дней</p>
+											</div>
+											<div class="metric-first-right">
+												<div class="metric metric-1">
+													<h4>Тираж:</h4>
+													<p>50 толстовок</p>
+												</div>
+												<div class="metric metric-2">
+													<h4>Стоимость:</h4>
+													<p>1890 рублей</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="photos-grid">
+										<div class="photo-placeholder large">
+											<img src="./sources/prj1_1.svg" alt="prj1_1" />
+										</div>
+										<div class="photo-placeholder small">
+											<img src="./sources/prj1_2.svg" alt="prj1_2" />
+										</div>
+									</div>
+								</article>
+
+								<!-- Мерч для "Баба Яга" -->
+								<article class="case-item case-item-3">
+									<h3>Мерч для "Баба Яга"</h3>
+									<div class="case-info">
+										<div class="case-description">
+											<h4>Идея:</h4>
+											<p>Сделать молодежный свитшот для модных людей</p>
+										</div>
+										<div class="case-metrics case-metrics-3">
+											<div class="metric metric-3-1">
+												<h4>Срок выполнения:</h4>
+												<p>10 дней</p>
+											</div>
+											<div class="metric metric-3-2">
+												<h4>Стоимость:</h4>
+												<p>Свитшоты по 2470 рублей</p>
+											</div>
+										</div>
+										<div class="metric metric-3-3">
+											<h4>Тираж:</h4>
+											<p>30 свитшотов</p>
+										</div>
+									</div>
+									<div class="photos-grid">
+										<div class="photo-placeholder small">
+											<img src="./sources/prj3_1.svg" alt="prj3_1" />
+										</div>
+										<div class="photo-placeholder large">
+											<img src="./sources/prj3_2.svg" alt="prj3_2" />
+										</div>
+									</div>
+								</article>
+							</div>
+
+							<div class="cases-right">
+								<!-- Мерч для "Studio 21" -->
+								<article class="case-item case-item-2">
+									<h3>Мерч для "Studio 21"</h3>
+									<div class="case-info">
+										<div class="case-info-second">
+											<div class="case-description">
+												<h4>Идея:</h4>
+												<p>Придерживаться минимализма и уникальности</p>
+											</div>
+											<div class="case-description">
+												<h4>Срок выполнения:</h4>
+												<p>20 дней</p>
+											</div>
+										</div>
+										<div class="case-metrics case-metrics-second">
+											<div class="metric metric-s-1">
+												<h4>Тираж:</h4>
+												<p>150 худи, 250 футболок</p>
+											</div>
+											<div class="metric metric-s-2">
+												<h4>Стоимость:</h4>
+												<p>Худи по 1870 рублей, футболки по 900</p>
+											</div>
+										</div>
+									</div>
+									<div class="photos-grid">
+										<div class="photo-placeholder large">
+											<img src="./sources/prj2_1.svg" alt="prj2_1" />
+										</div>
+										<div class="photo-placeholder small">
+											<img src="./sources/prj2_2.svg" alt="prj2_2" />
+										</div>
+									</div>
+								</article>
+							</div>
+						</div>
+						<div class="text-center">
+							<a href="/MerchProduction/Cases/" class="primary-btn"
+								>Посмотреть кейсы</a
+							>
+						</div>
+					</div>
+				</section>
+
+				<section class="faq">
+					<div class="container">
+						<h2 class="section-title">FAQ</h2>
+						<div class="faq-list">
+							<details>
+								<summary>
+									<span>Какое минимальное количество мерча для заказа?</span>
+									<div class="arrow"></div>
+								</summary>
+								<div class="details-content">
+									<p>
+										Мы начинаем обработку заказов, начиная с минимального объема в 100 единиц на каждую модель.
+									</p>
+								</div>
+							</details>
+							<details>
+								<summary>
+									<span>Какие способы оплаты у вас есть?</span>
+									<div class="arrow"></div>
+								</summary>
+								<div class="details-content">
+									<p>
+										Мы принимаем оплату банковской картой.
+									</p>
+								</div>
+							</details>
+							<details>
+								<summary>
+									<span>Как рассчитать стоимость?</span>
+									<div class="arrow"></div>
+								</summary>
+								<div class="details-content">
+									<p>
+										Заполните соответствующую форму с вашими данными. После
+										отправки заявки ожидайте ответа от менеджера для
+										подтверждения заказа.
+									</p>
+								</div>
+							</details>
+							<details>
+								<summary>
+									<span>Какой срок изготовления?</span>
+									<div class="arrow"></div>
+								</summary>
+								<div class="details-content">
+									<p>Сроки выполнения заказа от 4 дней до 3 недель</p>
+								</div>
+							</details>
+							<details>
+								<summary>
+									<span>Варианты доставки</span>
+									<div class="arrow"></div>
+								</summary>
+								<div class="details-content">
+									<p>
+										Варианты доставки могут включать стандартную,
+										экспресс-доставку, самовывоз и курьерскую доставку.
+									</p>
+								</div>
+							</details>
+						</div>
+
+						<div class="faq-buttons">
+							<a href="https://wa.me/84993228207?text=Добрый%20день%2C%20я%20по%20поводу..." class="primary-btn">Оставить заявку</a>
+							<a href="/MerchProduction/PricesPoshiv/" class="secondary-btn">
+								Получить консультацию
+							</a>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<!-- Обновленный код для футера с бургер-меню -->
+			<footer class="footer">
+				<div class="footer-wrapper">
+					<!-- Левая колонка -->
+					<div class="footer-left">
+						<!-- Заголовок футера с бургер-меню -->
+						<div class="footer-heading">
+							<h3>Навигация</h3>
+							<button class="footer-mobile-menu-btn" id="footerMobileMenuBtn">
+								<span></span>
+								<span></span>
+								<span></span>
+							</button>
+						</div>
+
+						<!-- Навигация (стандартная) -->
+						<div class="footer-nav" id="footerNav">
+							<div class="nav-column">
+								<a href="/MerchProduction/About us/">О нас</a>
+								<a href="/MerchProduction/Services/">Услуги</a>
+								<a href="/MerchProduction/Catalog/">Каталог</a>
+								<a href="/MerchProduction/Prices/">Цены</a>
+								<a href="/MerchProduction/Delivery/">Доставка</a>
+								<a href="/MerchProduction/Payment/">Оплата</a>
+							</div>
+							<div class="nav-column">
+								<a href="/MerchProduction/Cases/">Кейсы</a>
+								<a href="/MerchProduction/Jobs/">Вакансии</a>
+								<a href="/MerchProduction/Discounts/">Скидки</a>
+								<a href="/MerchProduction/Partners/">Партнёрам</a>
+								<a href="/MerchProduction/FAQ/">Частые вопросы</a>
+								<a href="/MerchProduction/Requirements/"
+									>Требования к макетам</a
+								>
+							</div>
+						</div>
+
+						<!-- Контакты и соцсети -->
+						<div class="footer-info">
+							<!-- Верхний ряд контактов -->
+							<div class="contacts-row">
+								<div class="contact-item">
+									<h4>Контакты:</h4>
+									<a href="tel:84993228207">
+										<p>+ 7 499 322 82 07</p>
+									</a>
+								</div>
+								<div class="contact-item">
+									<h4>Почта:</h4>
+									<a href="mailto:hello@merchproduction.ru">
+										<p>hello@merchproduction.ru</p>
+									</a>
+								</div>
+							</div>
+
+							<!-- Адрес и точки -->
+							<div class="address-row">
+								<div class="address-left">
+									<div class="contact-item">
+										<h4>Адрес:</h4>
+										<a
+											href="https://yandex.ru/maps/?um=constructor%3A5c3c62e456047bbe11750e40d2683789ef50159f97a2d2be216a87eb0b796864&source=constructorLink"
+										>
+											<p>Москва, Смольная улица, 32</p>
+										</a>
+										<p class="schedule"><b>•</b> по будням с 9:00 до 18:00</p>
+									</div>
+								</div>
+								<div class="social-dots">
+									<a href="#">
+										<img src="./sources/telega.svg" alt="telega" class="dot" />
+									</a>
+									<a
+										href="https://wa.me/84993228207?text=Добрый%20день%2C%20я%20по%20поводу..."
+									>
+										<img
+											src="./sources/whatsapp.svg"
+											alt="whatsapp"
+											class="dot"
+										/>
+									</a>
+								</div>
+							</div>
+
+							<!-- Копирайт -->
+							<div class="copyright">
+								<p>© 2025 - Merch Production</p>
+								<p>Все права защищены</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Правая форма -->
+					<div class="footer-form">
+						<div class="form-content">
+							<div class="form-header">
+								<h2>Поделитесь<br />своей идеей,</h2>
+								<p>
+									а мы подскажем<br />как воплотить<br />её <span>в жизнь</span>
+								</p>
+							</div>
+							<p class="min-order">Минимальная сумма заказа — 100 000 ₽</p>
+							<form>
+								<input type="text" placeholder="Ваше имя" />
+								<input type="tel" placeholder="Ваш номер телефона" />
+								<button type="submit">Проконсультироваться</button>
+							</form>
+						</div>
+						<div class="footer-image">
+							<img src="./sources/person-footer.svg" alt="model" />
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<!-- JavaScript для мобильного меню -->
+		<script src="./mobile-menu.js"></script>
+	</body>
+</html>

@@ -1,0 +1,228 @@
+main {
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.heading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 25.6px;
+    letter-spacing: 0;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding-top: 76px;
+}
+
+.text-container {
+    margin: 0 auto;
+    max-width: 1920px;
+}
+
+.subheading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    letter-spacing: 0;
+    margin-bottom: 2rem;
+    padding-top: 96px;
+    text-align: center; /* Центрирование текста */
+    max-width: 1550px;
+    margin-left: auto; /* Центрирование блока */
+    margin-right: auto; /* Центрирование блока */
+    width: 100%; /* Обеспечивает заполнение доступной ширины */
+    box-sizing: border-box; /* Учитывает padding в общей ширине */
+    padding-left: 64px; /* Отступ слева */
+    padding-right: 64px; /* Отступ справа */
+}
+
+.description, 
+.description-2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: 0;
+    text-align: justify; /* Выравнивание текста по ширине */
+    max-width: 1527px;
+    margin-left: auto; /* Центрирование блока */
+    margin-right: auto; /* Центрирование блока */
+    width: 100%; /* Обеспечивает заполнение доступной ширины */
+    box-sizing: border-box; /* Учитывает padding в общей ширине */
+    padding-left: 64px; /* Отступ слева */
+    padding-right: 64px; /* Отступ справа */
+}
+
+.description {
+    padding-top: 60px;
+}
+
+/* Main Content Adaptive Styles */
+
+/* Desktop Adjustments */
+@media screen and (max-width: 1450px) {
+    .heading {
+        font-size: 60px;
+        line-height: 70px;
+        padding-top: 60px;
+    }
+
+    .subheading {
+        font-size: 40px;
+        line-height: 48px;
+        padding-top: 70px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .description,
+    .description-2 {
+        font-size: 26px;
+        line-height: 38px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .description {
+        padding-top: 40px;
+    }
+
+    .text-container {
+        max-width: 90%;
+    }
+}
+
+/* Laptop Adjustments */
+@media screen and (max-width: 1200px) {
+    .heading {
+        font-size: 50px;
+        line-height: 60px;
+        padding-top: 50px;
+    }
+
+    .subheading {
+        font-size: 34px;
+        line-height: 42px;
+        padding-top: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .description,
+    .description-2 {
+        font-size: 22px;
+        line-height: 32px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .description {
+        padding-top: 30px;
+    }
+}
+
+/* Tablet Adjustments */
+@media screen and (max-width: 992px) {
+    main {
+        padding: 1.5rem;
+    }
+
+    .heading {
+        font-size: 42px;
+        line-height: 50px;
+        padding-top: 40px;
+    }
+
+    .subheading {
+        font-size: 28px;
+        line-height: 36px;
+        padding-top: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .description,
+    .description-2 {
+        font-size: 20px;
+        line-height: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .description {
+        padding-top: 25px;
+    }
+
+    .text-container {
+        max-width: 95%;
+    }
+}
+
+/* Mobile Adjustments */
+@media screen and (max-width: 768px) {
+    main {
+        padding: 1rem;
+    }
+
+    .heading {
+        font-size: 36px;
+        line-height: 44px;
+        padding-top: 30px;
+        margin-bottom: 1rem;
+    }
+
+    .subheading {
+        font-size: 24px;
+        line-height: 32px;
+        padding-top: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 1rem;
+    }
+
+    .description,
+    .description-2 {
+        font-size: 18px;
+        line-height: 28px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .description {
+        padding-top: 20px;
+    }
+
+    .text-container {
+        max-width: 100%;
+    }
+}
+
+/* Small Mobile Adjustments */
+@media screen and (max-width: 480px) {
+    .heading {
+        font-size: 30px;
+        line-height: 36px;
+        padding-top: 25px;
+    }
+
+    .subheading {
+        font-size: 22px;
+        line-height: 30px;
+        padding-top: 25px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .description,
+    .description-2 {
+        font-size: 16px;
+        line-height: 24px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .description {
+        padding-top: 15px;
+    }
+}

@@ -1,0 +1,284 @@
+main {
+	margin: 0 auto;
+	padding: 2rem;
+}
+
+.heading {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
+	font-size: 70px;
+	line-height: 1.2;
+	letter-spacing: 0;
+	margin-bottom: 2rem;
+	text-align: center;
+	padding-top: 76px;
+}
+
+.text-container {
+	padding-left: 156px;
+	padding-top: 130px;
+	margin: 0 auto;
+	max-width: 1920px;
+}
+
+.main-title,
+.subtitle {
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 35px;
+	margin-bottom: 20px;
+}
+
+.subtitle {
+	margin-top: 40px;
+}
+
+.requirements-text {
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 35px;
+	margin-bottom: 30px;
+	max-width: 1400px;
+}
+
+.requirements-list {
+	margin: 0;
+	padding-left: 20px;
+	margin-bottom: 30px;
+}
+
+.requirements-list li {
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 35px;
+	margin-left: 25px;
+	margin-bottom: 5px;
+}
+
+.underlined-title {
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 35px;
+	text-decoration: underline;
+	margin-bottom: 20px;
+}
+
+.numbered-list {
+	counter-reset: item;
+	list-style-type: none;
+	padding-left: 0;
+	margin-bottom: 30px;
+}
+
+.numbered-list li {
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 35px;
+	margin-bottom: 5px;
+	padding-left: 0;
+}
+
+.numbered-list li::before {
+	content: counter(item) '. ';
+	counter-increment: item;
+}
+
+.final-note {
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 35px;
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+/* Desktop Adjustments */
+@media screen and (max-width: 1450px) {
+	.heading {
+		font-size: 60px;
+		padding-top: 60px;
+	}
+
+	.text-container {
+		padding-left: 120px;
+		padding-top: 100px;
+	}
+
+	.main-title,
+	.subtitle,
+	.requirements-text,
+	.requirements-list li,
+	.underlined-title,
+	.numbered-list li,
+	.final-note {
+		font-size: 22px;
+		line-height: 32px;
+	}
+}
+
+/* Laptop Adjustments */
+@media screen and (max-width: 1200px) {
+	.heading {
+		font-size: 50px;
+		padding-top: 50px;
+		margin-bottom: 1.5rem;
+	}
+
+	.text-container {
+		padding-left: 80px;
+		padding-top: 80px;
+	}
+
+	.main-title,
+	.subtitle,
+	.requirements-text,
+	.requirements-list li,
+	.underlined-title,
+	.numbered-list li,
+	.final-note {
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	.requirements-list li {
+		margin-left: 20px;
+	}
+}
+
+/* Tablet Adjustments */
+@media screen and (max-width: 992px) {
+	main {
+		padding: 1.5rem;
+	}
+
+	.heading {
+		font-size: 40px;
+		padding-top: 40px;
+		margin-bottom: 1rem;
+	}
+
+	.text-container {
+		padding-left: 50px;
+		padding-top: 60px;
+	}
+
+	.main-title,
+	.subtitle,
+	.requirements-text,
+	.requirements-list li,
+	.underlined-title,
+	.numbered-list li,
+	.final-note {
+		font-size: 18px;
+		line-height: 28px;
+	}
+
+	.requirements-list,
+	.numbered-list {
+		margin-bottom: 20px;
+	}
+
+	.requirements-list li {
+		margin-left: 15px;
+		margin-bottom: 3px;
+	}
+
+	.numbered-list li {
+		margin-bottom: 3px;
+	}
+}
+
+/* Mobile Adjustments */
+@media screen and (max-width: 768px) {
+	main {
+		padding: 1rem;
+	}
+
+	.heading {
+		font-size: 32px;
+		padding-top: 30px;
+		margin-bottom: 1rem;
+	}
+
+	.text-container {
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 40px;
+	}
+
+	.main-title,
+	.subtitle {
+		font-size: 18px;
+		line-height: 26px;
+		margin-bottom: 15px;
+	}
+
+	.requirements-text,
+	.requirements-list li,
+	.underlined-title,
+	.numbered-list li,
+	.final-note {
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	.requirements-list {
+		padding-left: 10px;
+	}
+
+	.requirements-list li {
+		margin-left: 12px;
+	}
+
+	.final-note {
+		margin-bottom: 30px;
+	}
+}
+
+/* Small Mobile Adjustments */
+@media screen and (max-width: 480px) {
+	.heading {
+		font-size: 28px;
+		padding-top: 20px;
+	}
+
+	.text-container {
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 30px;
+	}
+
+	.main-title,
+	.subtitle {
+		font-size: 17px;
+		line-height: 24px;
+		margin-bottom: 12px;
+	}
+
+	.requirements-text,
+	.requirements-list li,
+	.underlined-title,
+	.numbered-list li,
+	.final-note {
+		font-size: 15px;
+		line-height: 22px;
+	}
+
+	.requirements-list,
+	.numbered-list {
+		margin-bottom: 15px;
+	}
+
+	.requirements-list li {
+		margin-left: 10px;
+		margin-bottom: 2px;
+	}
+
+	.numbered-list li {
+		margin-bottom: 2px;
+	}
+
+	.final-note {
+		margin-top: 20px;
+		margin-bottom: 25px;
+	}
+}

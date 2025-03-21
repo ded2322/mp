@@ -1,0 +1,604 @@
+main {
+	margin: 0 auto;
+	padding: 2rem;
+}
+
+.heading {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
+	font-size: 50px;
+	line-height: 1.2;
+	letter-spacing: 0;
+	margin-bottom: 2rem;
+	text-align: center;
+	padding-top: 76px;
+}
+
+.main-conteiner {
+	max-width: 1920px;
+	margin: 0 auto;
+	padding-top: 80px;
+}
+
+.merch-info {
+	max-width: 1200px;
+	margin: 0 auto 60px;
+	padding: 0 20px;
+}
+
+.info-text {
+	font-family: Montserrat;
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 40px;
+	letter-spacing: 0;
+	margin-bottom: 20px;
+	color: #000;
+}
+
+.section-title {
+	font-family: Montserrat;
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 25.6px;
+	letter-spacing: 0;
+	margin: 50px 0 30px;
+	text-align: left;
+}
+
+.pricing-section {
+	max-width: 1200px;
+	margin: 0 auto 60px;
+	padding: 0 20px;
+}
+
+.pricing-table-wrapper {
+	overflow-x: auto;
+	margin-bottom: 15px;
+}
+
+.pricing-table {
+	width: 100%;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+.pricing-table th,
+.pricing-table td {
+	padding: 12px;
+	border: 1px solid #e5e5e5;
+	background-color: #f9f9f9;
+}
+
+.pricing-table th {
+	background-color: #f2f2f2;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 30px;
+}
+
+.pricing-table td {
+	font-family: Montserrat;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 30px;
+}
+
+.pricing-table td:first-child {
+	text-align: left;
+	font-weight: 500;
+}
+
+.min-order-text {
+	text-align: center;
+	font-family: Montserrat;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 30px;
+	margin-top: 15px;
+}
+
+.services-section {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.service-info {
+	font-family: Montserrat;
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 40px;
+	margin-bottom: 30px;
+}
+
+.subsection-title {
+	font-family: Montserrat;
+	font-weight: 800;
+	font-size: 25px;
+	line-height: 30px;
+	margin: 35px 0 20px;
+}
+
+.product-types,
+.materials-info {
+	font-family: Montserrat;
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 30px;
+	margin-bottom: 25px;
+}
+
+.branding-methods {
+	list-style-type: none;
+	margin-bottom: 30px;
+}
+
+.branding-methods li {
+	font-family: Montserrat;
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 30px;
+	margin-bottom: 12px;
+	position: relative;
+	padding-left: 20px;
+}
+
+.branding-methods li:before {
+	content: '•';
+	position: absolute;
+	left: 0;
+	color: #000;
+}
+
+.footer-note {
+	font-family: Montserrat;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 35px;
+	margin-bottom: 40px;
+}
+
+.button-container {
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 70px;
+}
+
+.request-btn {
+	display: inline-block;
+	width: 450px;
+	height: 103px;
+	border-radius: 17.14px;
+	font-family: Montserrat;
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 103px;
+	padding: 0;
+	text-align: center;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover,
+.request-btn:hover {
+	cursor: pointer;
+	background-color: #1560db;
+}
+
+/* Desktop Adjustments */
+@media screen and (max-width: 1450px) {
+	.heading {
+		font-size: 42px;
+		padding-top: 60px;
+	}
+
+	.main-conteiner {
+		padding-top: 60px;
+	}
+
+	.info-text {
+		font-size: 22px;
+		line-height: 35px;
+	}
+
+	.section-title {
+		font-size: 28px;
+		margin: 40px 0 25px;
+	}
+
+	.pricing-table th,
+	.pricing-table td {
+		padding: 10px;
+		font-size: 18px;
+		line-height: 28px;
+	}
+
+	.min-order-text {
+		font-size: 18px;
+		line-height: 28px;
+	}
+
+	.service-info {
+		font-size: 22px;
+		line-height: 35px;
+	}
+
+	.subsection-title {
+		font-size: 22px;
+		line-height: 28px;
+		margin: 30px 0 15px;
+	}
+
+	.product-types,
+	.materials-info {
+		font-size: 22px;
+		line-height: 28px;
+	}
+
+	.branding-methods li {
+		font-size: 22px;
+		line-height: 28px;
+		margin-bottom: 10px;
+	}
+
+	.footer-note {
+		font-size: 18px;
+		line-height: 30px;
+		margin-bottom: 35px;
+	}
+
+	.request-btn {
+		width: 400px;
+		height: 90px;
+		font-size: 26px;
+		line-height: 90px;
+	}
+}
+
+/* Laptop Adjustments */
+@media screen and (max-width: 1200px) {
+	.heading {
+		font-size: 36px;
+		padding-top: 50px;
+	}
+
+	.main-conteiner {
+		padding-top: 40px;
+	}
+
+	.info-text {
+		font-size: 20px;
+		line-height: 32px;
+		margin-bottom: 15px;
+	}
+
+	.section-title {
+		font-size: 24px;
+		margin: 35px 0 20px;
+	}
+
+	.pricing-table th,
+	.pricing-table td {
+		padding: 8px;
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	.min-order-text {
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	.service-info {
+		font-size: 20px;
+		line-height: 32px;
+		margin-bottom: 25px;
+	}
+
+	.subsection-title {
+		font-size: 20px;
+		line-height: 26px;
+		margin: 25px 0 12px;
+	}
+
+	.product-types,
+	.materials-info {
+		font-size: 20px;
+		line-height: 26px;
+		margin-bottom: 20px;
+	}
+
+	.branding-methods li {
+		font-size: 20px;
+		line-height: 26px;
+		margin-bottom: 8px;
+	}
+
+	.footer-note {
+		font-size: 16px;
+		line-height: 28px;
+		margin-bottom: 30px;
+	}
+
+	.request-btn {
+		width: 350px;
+		height: 80px;
+		font-size: 22px;
+		line-height: 80px;
+	}
+}
+
+/* Tablet Adjustments */
+@media screen and (max-width: 992px) {
+	.heading {
+		font-size: 32px;
+		padding-top: 40px;
+		line-height: 1.3;
+	}
+
+	.main-conteiner {
+		padding-top: 30px;
+	}
+
+	.info-text {
+		font-size: 18px;
+		line-height: 28px;
+	}
+
+	.section-title {
+		font-size: 22px;
+		margin: 30px 0 15px;
+	}
+
+	.pricing-table-wrapper {
+		border-radius: 8px;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+	}
+
+	.pricing-table th,
+	.pricing-table td {
+		padding: 8px 6px;
+		font-size: 15px;
+		line-height: 22px;
+	}
+
+	.min-order-text {
+		font-size: 15px;
+		line-height: 22px;
+	}
+
+	.service-info {
+		font-size: 18px;
+		line-height: 28px;
+		margin-bottom: 20px;
+	}
+
+	.subsection-title {
+		font-size: 18px;
+		line-height: 24px;
+		margin: 20px 0 10px;
+	}
+
+	.product-types,
+	.materials-info {
+		font-size: 18px;
+		line-height: 24px;
+		margin-bottom: 15px;
+	}
+
+	.branding-methods li {
+		font-size: 18px;
+		line-height: 24px;
+		margin-bottom: 8px;
+		padding-left: 15px;
+	}
+
+	.footer-note {
+		font-size: 15px;
+		line-height: 24px;
+		margin-bottom: 25px;
+	}
+
+	.button-container {
+		margin-top: 30px;
+		margin-bottom: 50px;
+	}
+
+	.request-btn {
+		width: 300px;
+		height: 70px;
+		font-size: 20px;
+		line-height: 70px;
+		border-radius: 14px;
+	}
+}
+
+/* Mobile Adjustments */
+@media screen and (max-width: 768px) {
+	.heading {
+		font-size: 28px;
+		padding-top: 30px;
+		margin-bottom: 1.5rem;
+	}
+
+	.main-conteiner {
+		padding-top: 20px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.merch-info,
+	.pricing-section,
+	.services-section {
+		padding: 0 10px;
+	}
+
+	.info-text {
+		font-size: 16px;
+		line-height: 26px;
+	}
+
+	.section-title {
+		font-size: 20px;
+		margin: 25px 0 15px;
+		line-height: 1.3;
+	}
+
+	.pricing-table-wrapper {
+		margin-bottom: 10px;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	.pricing-table {
+		min-width: 600px; /* Ensure the table doesn't shrink too much */
+	}
+
+	.pricing-table th,
+	.pricing-table td {
+		padding: 6px 4px;
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.min-order-text {
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.service-info {
+		font-size: 16px;
+		line-height: 26px;
+		margin-bottom: 15px;
+	}
+
+	.subsection-title {
+		font-size: 16px;
+		line-height: 22px;
+		margin: 18px 0 8px;
+	}
+
+	.product-types,
+	.materials-info {
+		font-size: 16px;
+		line-height: 22px;
+		margin-bottom: 12px;
+	}
+
+	.branding-methods {
+		padding-left: 5px;
+	}
+
+	.branding-methods li {
+		font-size: 16px;
+		line-height: 22px;
+		margin-bottom: 6px;
+		padding-left: 12px;
+	}
+
+	.footer-note {
+		font-size: 14px;
+		line-height: 22px;
+		margin-bottom: 20px;
+	}
+
+	.button-container {
+		margin-top: 25px;
+		margin-bottom: 40px;
+	}
+
+	.request-btn {
+		width: 100%;
+		max-width: 280px;
+		height: 60px;
+		font-size: 18px;
+		line-height: 60px;
+		border-radius: 12px;
+	}
+}
+
+/* Small Mobile Adjustments */
+@media screen and (max-width: 480px) {
+	.heading {
+		font-size: 24px;
+		padding-top: 25px;
+		margin-bottom: 1rem;
+		line-height: 1.3;
+	}
+
+	.main-conteiner {
+		padding-top: 15px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.info-text {
+		font-size: 15px;
+		line-height: 24px;
+	}
+
+	.section-title {
+		font-size: 18px;
+		margin: 20px 0 12px;
+	}
+
+	.pricing-table {
+		min-width: 450px; /* Allow smaller but still scrollable */
+	}
+
+	.pricing-table th,
+	.pricing-table td {
+		padding: 5px 3px;
+		font-size: 13px;
+		line-height: 18px;
+	}
+
+	.min-order-text {
+		font-size: 13px;
+		line-height: 18px;
+	}
+
+	.service-info {
+		font-size: 15px;
+		line-height: 24px;
+	}
+
+	.subsection-title {
+		font-size: 15px;
+		line-height: 20px;
+		margin: 15px 0 8px;
+	}
+
+	.product-types,
+	.materials-info {
+		font-size: 15px;
+		line-height: 20px;
+		margin-bottom: 10px;
+	}
+
+	.branding-methods li {
+		font-size: 15px;
+		line-height: 20px;
+		margin-bottom: 6px;
+		padding-left: 10px;
+	}
+
+	.footer-note {
+		font-size: 13px;
+		line-height: 20px;
+		margin-bottom: 18px;
+	}
+
+	.button-container {
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+
+	.request-btn {
+		max-width: 250px;
+		height: 50px;
+		font-size: 16px;
+		line-height: 50px;
+		border-radius: 10px;
+	}
+}

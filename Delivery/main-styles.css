@@ -1,0 +1,330 @@
+main {
+	margin: 0 auto;
+	padding: 2rem;
+}
+
+.heading {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
+	font-size: 70px;
+	line-height: 25.6px;
+	letter-spacing: 0;
+	margin-bottom: 2rem;
+	text-align: center;
+	padding-top: 76px;
+}
+
+.text-container {
+	padding-left: 156px;
+	padding-top: 130px;
+	margin: 0 auto;
+	max-width: 1920px;
+}
+
+.main-title {
+	font-weight: 800;
+	font-size: 35px;
+	line-height: 35px;
+	margin-bottom: 38px;
+}
+
+.second-title {
+	margin-top: 68px;
+	font-weight: 700;
+	font-size: 35px;
+	line-height: 35px;
+	margin-bottom: 37px;
+}
+
+.question {
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 35px;
+	text-decoration: underline;
+	margin-bottom: 34px;
+}
+
+.answer {
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 35px;
+	margin-bottom: 36px;
+	max-width: 1400px;
+}
+
+ul {
+	margin: 0;
+	padding-left: 20px;
+}
+
+li {
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 35px;
+	margin-left: 25px;
+}
+
+.question-5 {
+	margin-top: 36px;
+}
+
+.question-6 {
+	margin-top: 36px;
+}
+
+.answer-5 {
+	max-width: 1460px;
+}
+
+.answer-6 {
+	max-width: 1460px;
+}
+
+.answer-6 :nth-child(3) {
+	margin-left: 70px;
+}
+
+.answer-6 :nth-child(4) {
+	margin-left: 70px;
+}
+
+.text-end {
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 35px;
+	margin-top: 35px;
+}
+
+/* Desktop Adjustments */
+@media screen and (max-width: 1450px) {
+	.heading {
+		font-size: 60px;
+		padding-top: 60px;
+		line-height: 1.2;
+	}
+
+	.text-container {
+		padding-left: 100px;
+		padding-top: 100px;
+	}
+
+	.main-title,
+	.second-title {
+		font-size: 32px;
+	}
+
+	.question,
+	.answer,
+	li,
+	.text-end {
+		font-size: 26px;
+		line-height: 32px;
+	}
+
+	.answer,
+	.answer-5,
+	.answer-6 {
+		max-width: 90%;
+	}
+}
+
+/* Laptop Adjustments */
+@media screen and (max-width: 1200px) {
+	.heading {
+		font-size: 50px;
+		padding-top: 50px;
+	}
+
+	.text-container {
+		padding-left: 60px;
+		padding-top: 80px;
+	}
+
+	.main-title,
+	.second-title {
+		font-size: 28px;
+		line-height: 32px;
+	}
+
+	.question,
+	.answer,
+	li,
+	.text-end {
+		font-size: 22px;
+		line-height: 28px;
+	}
+
+	.answer-6 :nth-child(3),
+	.answer-6 :nth-child(4) {
+		margin-left: 50px;
+	}
+}
+
+/* Tablet Adjustments */
+@media screen and (max-width: 992px) {
+	.heading {
+		font-size: 42px;
+		padding-top: 40px;
+	}
+
+	.text-container {
+		padding-left: 40px;
+		padding-right: 40px;
+		padding-top: 60px;
+		max-width: 100%;
+	}
+
+	.main-title,
+	.second-title {
+		font-size: 26px;
+		line-height: 30px;
+		margin-bottom: 30px;
+	}
+
+	.second-title {
+		margin-top: 50px;
+	}
+
+	.question,
+	.answer,
+	li,
+	.text-end {
+		font-size: 20px;
+		line-height: 26px;
+	}
+
+	.question {
+		margin-bottom: 25px;
+	}
+
+	.answer {
+		margin-bottom: 30px;
+	}
+
+	.answer,
+	.answer-5,
+	.answer-6 {
+		max-width: 100%;
+	}
+}
+
+/* Mobile Adjustments */
+@media screen and (max-width: 768px) {
+	main {
+		padding: 1.5rem 1rem;
+	}
+
+	.heading {
+		font-size: 36px;
+		padding-top: 30px;
+		line-height: 1.2;
+		margin-bottom: 1.5rem;
+	}
+
+	.text-container {
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 40px;
+	}
+
+	.main-title,
+	.second-title {
+		font-size: 24px;
+		line-height: 28px;
+		margin-bottom: 25px;
+	}
+
+	.second-title {
+		margin-top: 40px;
+	}
+
+	.question {
+		font-size: 18px;
+		line-height: 24px;
+		margin-bottom: 20px;
+	}
+
+	.answer,
+	li,
+	.text-end {
+		font-size: 18px;
+		line-height: 24px;
+	}
+
+	.answer {
+		margin-bottom: 25px;
+	}
+
+	.answer-6 :nth-child(3),
+	.answer-6 :nth-child(4) {
+		margin-left: 30px;
+	}
+
+	.question-5,
+	.question-6 {
+		margin-top: 25px;
+	}
+}
+
+/* Small Mobile Adjustments */
+@media screen and (max-width: 480px) {
+	main {
+		padding: 1rem 0.5rem;
+	}
+
+	.heading {
+		font-size: 32px;
+		padding-top: 20px;
+	}
+
+	.text-container {
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-top: 30px;
+	}
+
+	.main-title,
+	.second-title {
+		font-size: 22px;
+		line-height: 26px;
+	}
+
+	.second-title {
+		margin-top: 35px;
+		margin-bottom: 20px;
+	}
+
+	.question {
+		font-size: 16px;
+		line-height: 22px;
+		margin-bottom: 15px;
+	}
+
+	.answer,
+	li,
+	.text-end {
+		font-size: 16px;
+		line-height: 22px;
+	}
+
+	.answer {
+		margin-bottom: 20px;
+	}
+
+	ul {
+		padding-left: 10px;
+	}
+
+	li {
+		margin-left: 15px;
+	}
+
+	.answer-6 :nth-child(3),
+	.answer-6 :nth-child(4) {
+		margin-left: 20px;
+	}
+
+	.text-end {
+		margin-top: 25px;
+	}
+}

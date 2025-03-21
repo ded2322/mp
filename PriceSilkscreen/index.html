@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Merch Production</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="header-styles.css" />
+		<link rel="stylesheet" href="main-styles.css" />
+		<link rel="stylesheet" href="footer-styles.css" />
+		<link rel="stylesheet" href="mobile-menu-styles.css" />
+
+		<!-- Favicon links -->
+		<link
+			rel="apple-touch-icon"
+			sizes="57x57"
+			href="../Favicon/apple-icon-57x57.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="60x60"
+			href="../Favicon/apple-icon-60x60.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="72x72"
+			href="../Favicon/apple-icon-72x72.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="76x76"
+			href="../Favicon/apple-icon-76x76.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="114x114"
+			href="../Favicon/apple-icon-114x114.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="120x120"
+			href="../Favicon/apple-icon-120x120.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="144x144"
+			href="../Favicon/apple-icon-144x144.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="152x152"
+			href="../Favicon/apple-icon-152x152.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="../Favicon/apple-icon-180x180.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="192x192"
+			href="../Favicon/android-icon-192x192.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="../Favicon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="96x96"
+			href="../Favicon/favicon-96x96.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="../Favicon/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="../Favicon/manifest.json" />
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta
+			name="msapplication-TileImage"
+			content="../Favicon/ms-icon-144x144.png"
+		/>
+		<meta name="theme-color" content="#ffffff" />
+	</head>
+
+	<body>
+		<div class="page-wrapper">
+			<header class="header">
+				<div class="container header-container">
+					<a href="/MerchProduction/Main/" class="logo">
+						MERCH<span class="logo-light">PRODUCTION</span>
+					</a>
+					<nav class="nav">
+						<a href="/MerchProduction/About us/">О НАС</a>
+						<a href="/MerchProduction/Catalog/">КАТАЛОГ</a>
+						<a href="/MerchProduction/Cases/">КЕЙСЫ</a>
+						<a href="/MerchProduction/Prices/">ЦЕНЫ</a>
+						<a href="/MerchProduction/Contacts/">КОНТАКТЫ</a>
+					</nav>
+					<div class="contact-info">
+						<a href="tel:84993228207" class="phone">8 (499) 322-82-07</a>
+						<a href="#">
+							<img class="img-t-w" src="./sources/telega.svg" alt="telega" />
+						</a>
+						<a
+							href="https://wa.me/84993228207?text=Добрый%20день%2C%20я%20по%20поводу..."
+						>
+							<img
+								class="img-t-w"
+								src="./sources/whatsapp.svg"
+								alt="whatsapp"
+							/>
+						</a>
+						<a href="#consultation" class="consultation-btn">
+							Получить консультацию
+						</a>
+					</div>
+
+					<!-- Кнопка мобильного меню -->
+					<button class="mobile-menu-btn" id="mobileMenuBtn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</div>
+			</header>
+
+			<!-- Мобильное меню -->
+			<div class="mobile-menu" id="mobileMenu">
+				<div class="mobile-menu-header">
+					<a href="/MerchProduction/Main/" class="logo">
+						MERCH<span class="logo-light">PRODUCTION</span>
+					</a>
+					<button class="close-menu-btn" id="closeMenuBtn">✕</button>
+				</div>
+				<nav class="mobile-nav">
+					<a href="/MerchProduction/About us/">О НАС</a>
+					<a href="/MerchProduction/Catalog/">КАТАЛОГ</a>
+					<a href="/MerchProduction/Cases/">КЕЙСЫ</a>
+					<a href="/MerchProduction/Prices/">ЦЕНЫ</a>
+					<a href="/MerchProduction/Contacts/">КОНТАКТЫ</a>
+				</nav>
+				<div class="mobile-contact">
+					<a href="tel:84993228207" class="phone">8 (499) 322-82-07</a>
+					<div class="mobile-social">
+						<a href="#">
+							<img src="./sources/telega.svg" alt="telega" />
+						</a>
+						<a
+							href="https://wa.me/84993228207?text=Добрый%20день%2C%20я%20по%20поводу..."
+						>
+							<img src="./sources/whatsapp.svg" alt="whatsapp" />
+						</a>
+					</div>
+					<a
+						href="#consultation"
+						class="consultation-btn mobile-consultation-btn"
+					>
+						Получить консультацию
+					</a>
+				</div>
+			</div>
+
+			<main>
+				<h1 class="heading">СТОИМОСТЬ ЩЕЛКОГРАФИИ</h1>
+
+				<div class="pricing-table">
+					<table>
+						<thead>
+							<tr class="header-row">
+								<th class="header-cell">Кол-во/цвет</th>
+								<th class="header-cell">1</th>
+								<th class="header-cell">2</th>
+								<th class="header-cell">3</th>
+								<th class="header-cell">4</th>
+								<th class="header-cell">5</th>
+								<th class="header-cell">6</th>
+								<th class="header-cell">7</th>
+								<th class="header-cell">8</th>
+								<th class="header-cell">9</th>
+								<th class="header-cell">10</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="first-column">1</td>
+								<td>450</td>
+								<td>500</td>
+								<td>550</td>
+								<td>600</td>
+								<td>650</td>
+								<td>700</td>
+								<td>750</td>
+								<td>800</td>
+								<td>850</td>
+								<td>900</td>
+							</tr>
+							<tr class="spacer-row">
+								<td colspan="11"></td>
+							</tr>
+							<tr>
+								<td class="first-column">5</td>
+								<td>245</td>
+								<td>275</td>
+								<td>305</td>
+								<td>335</td>
+								<td>365</td>
+								<td>395</td>
+								<td>425</td>
+								<td>455</td>
+								<td>485</td>
+								<td>515</td>
+							</tr>
+							<tr class="spacer-row">
+								<td colspan="11"></td>
+							</tr>
+							<tr>
+								<td class="first-column">10</td>
+								<td>162</td>
+								<td>187</td>
+								<td>212</td>
+								<td>237</td>
+								<td>262</td>
+								<td>287</td>
+								<td>312</td>
+								<td>337</td>
+								<td>362</td>
+								<td>387</td>
+							</tr>
+							<tr>
+								<td class="first-column">20</td>
+								<td>137</td>
+								<td>157</td>
+								<td>177</td>
+								<td>197</td>
+								<td>217</td>
+								<td>237</td>
+								<td>257</td>
+								<td>277</td>
+								<td>297</td>
+								<td>317</td>
+							</tr>
+							<tr>
+								<td class="first-column">30</td>
+								<td>112</td>
+								<td>127</td>
+								<td>142</td>
+								<td>157</td>
+								<td>172</td>
+								<td>187</td>
+								<td>202</td>
+								<td>217</td>
+								<td>232</td>
+								<td>247</td>
+							</tr>
+							<tr>
+								<td class="first-column">40</td>
+								<td>87</td>
+								<td>97</td>
+								<td>107</td>
+								<td>117</td>
+								<td>127</td>
+								<td>137</td>
+								<td>147</td>
+								<td>157</td>
+								<td>167</td>
+								<td>177</td>
+							</tr>
+							<tr class="spacer-row">
+								<td colspan="11"></td>
+							</tr>
+							<tr>
+								<td class="first-column">50</td>
+								<td>74</td>
+								<td>82</td>
+								<td>90</td>
+								<td>98</td>
+								<td>106</td>
+								<td>114</td>
+								<td>122</td>
+								<td>130</td>
+								<td>138</td>
+								<td>146</td>
+							</tr>
+							<tr>
+								<td class="first-column">60</td>
+								<td>71</td>
+								<td>79</td>
+								<td>87</td>
+								<td>95</td>
+								<td>103</td>
+								<td>111</td>
+								<td>119</td>
+								<td>127</td>
+								<td>135</td>
+								<td>143</td>
+							</tr>
+							<tr>
+								<td class="first-column">70</td>
+								<td>68</td>
+								<td>76</td>
+								<td>84</td>
+								<td>92</td>
+								<td>100</td>
+								<td>108</td>
+								<td>116</td>
+								<td>124</td>
+								<td>132</td>
+								<td>140</td>
+							</tr>
+							<tr>
+								<td class="first-column">80</td>
+								<td>65</td>
+								<td>73</td>
+								<td>81</td>
+								<td>89</td>
+								<td>97</td>
+								<td>105</td>
+								<td>113</td>
+								<td>121</td>
+								<td>137</td>
+								<td>145</td>
+							</tr>
+							<tr>
+								<td class="first-column">90</td>
+								<td>62</td>
+								<td>70</td>
+								<td>78</td>
+								<td>86</td>
+								<td>94</td>
+								<td>102</td>
+								<td>110</td>
+								<td>118</td>
+								<td>126</td>
+								<td>134</td>
+							</tr>
+							<tr class="spacer-row">
+								<td colspan="11"></td>
+							</tr>
+							<tr>
+								<td class="first-column">100</td>
+								<td>55</td>
+								<td>62</td>
+								<td>69</td>
+								<td>76</td>
+								<td>83</td>
+								<td>90</td>
+								<td>97</td>
+								<td>104</td>
+								<td>111</td>
+								<td>118</td>
+							</tr>
+							<tr>
+								<td class="first-column">200</td>
+								<td>53</td>
+								<td>60</td>
+								<td>67</td>
+								<td>74</td>
+								<td>81</td>
+								<td>88</td>
+								<td>95</td>
+								<td>102</td>
+								<td>109</td>
+								<td>116</td>
+							</tr>
+							<tr>
+								<td class="first-column">300</td>
+								<td>51</td>
+								<td>58</td>
+								<td>65</td>
+								<td>72</td>
+								<td>79</td>
+								<td>86</td>
+								<td>93</td>
+								<td>100</td>
+								<td>107</td>
+								<td>114</td>
+							</tr>
+							<tr>
+								<td class="first-column">400</td>
+								<td>49</td>
+								<td>56</td>
+								<td>63</td>
+								<td>70</td>
+								<td>77</td>
+								<td>84</td>
+								<td>91</td>
+								<td>98</td>
+								<td>105</td>
+								<td>112</td>
+							</tr>
+							<tr>
+								<td class="first-column">500</td>
+								<td>43</td>
+								<td>49</td>
+								<td>55</td>
+								<td>61</td>
+								<td>67</td>
+								<td>73</td>
+								<td>79</td>
+								<td>85</td>
+								<td>91</td>
+								<td>97</td>
+							</tr>
+							<tr>
+								<td class="first-column">600</td>
+								<td>41</td>
+								<td>47</td>
+								<td>53</td>
+								<td>59</td>
+								<td>65</td>
+								<td>71</td>
+								<td>77</td>
+								<td>83</td>
+								<td>89</td>
+								<td>96</td>
+							</tr>
+							<tr>
+								<td class="first-column">700</td>
+								<td>39</td>
+								<td>45</td>
+								<td>51</td>
+								<td>57</td>
+								<td>63</td>
+								<td>69</td>
+								<td>75</td>
+								<td>81</td>
+								<td>87</td>
+								<td>93</td>
+							</tr>
+							<tr>
+								<td class="first-column">800</td>
+								<td>37</td>
+								<td>43</td>
+								<td>49</td>
+								<td>55</td>
+								<td>61</td>
+								<td>67</td>
+								<td>73</td>
+								<td>79</td>
+								<td>85</td>
+								<td>91</td>
+							</tr>
+							<tr>
+								<td class="first-column">900</td>
+								<td>35</td>
+								<td>41</td>
+								<td>47</td>
+								<td>53</td>
+								<td>59</td>
+								<td>65</td>
+								<td>71</td>
+								<td>77</td>
+								<td>83</td>
+								<td>89</td>
+							</tr>
+							<tr class="spacer-row">
+								<td colspan="11"></td>
+							</tr>
+							<tr>
+								<td class="first-column">1000</td>
+								<td>29</td>
+								<td>34</td>
+								<td>39</td>
+								<td>44</td>
+								<td>49</td>
+								<td>54</td>
+								<td>59</td>
+								<td>64</td>
+								<td>69</td>
+								<td>74</td>
+							</tr>
+							<tr>
+								<td class="first-column">2000</td>
+								<td>28</td>
+								<td>33</td>
+								<td>38</td>
+								<td>43</td>
+								<td>48</td>
+								<td>53</td>
+								<td>58</td>
+								<td>63</td>
+								<td>68</td>
+								<td>73</td>
+							</tr>
+							<tr>
+								<td class="first-column">3000</td>
+								<td>27</td>
+								<td>32</td>
+								<td>37</td>
+								<td>42</td>
+								<td>47</td>
+								<td>52</td>
+								<td>57</td>
+								<td>62</td>
+								<td>67</td>
+								<td>72</td>
+							</tr>
+							<tr>
+								<td class="first-column">4000</td>
+								<td>26</td>
+								<td>31</td>
+								<td>36</td>
+								<td>41</td>
+								<td>46</td>
+								<td>51</td>
+								<td>56</td>
+								<td>61</td>
+								<td>66</td>
+								<td>71</td>
+							</tr>
+							<tr>
+								<td class="first-column">5000</td>
+								<td>25</td>
+								<td>30</td>
+								<td>35</td>
+								<td>40</td>
+								<td>45</td>
+								<td>50</td>
+								<td>55</td>
+								<td>60</td>
+								<td>65</td>
+								<td>70</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<p class="min-order-note">Минимальный тираж: 100 ед.</p>
+
+				<div class="button-container">
+					<button class="request-btn">Оставить заявку</button>
+				</div>
+
+				<div class="pricing-info">
+					<p class="info-title">Минимальная партия: 100 единиц</p>
+					<p>Цены на трафаретную печать (шелкография): А4 до А3 +20%</p>
+					<p>Цены на ПЛАШКИ : до А4 +20%, До А3+35%</p>
+					<p>"Плечики до А4 200-400р, до А3 550р за каждый цвет</p>
+
+					<div class="info-section">
+						<p class="section-title">Формат печати:</p>
+						<ul>
+							<li>от А4 до А3 + 4 цвета</li>
+							<li>от А3 до А2 + 5 цвета</li>
+							<li>от А2 до А1 + 7 цветов</li>
+						</ul>
+					</div>
+
+					<div class="info-section">
+						<p>Печать на темных изделиях +1 цвет ПОДЛОЖКА</p>
+						<p>Печать спец. красками (золото, серебро, пуф, флюор) + 3 цвет</p>
+						<p>
+							Нестандартное расположение (печать на рукаве, крое и др.) +1 цвет
+						</p>
+						<p>Толстовки 2х и Фланели+Цвет/флутер с наносом + 3 цвета</p>
+						<p>Вязаный трикотаж, лайкра, синтетические материалы + 2цвета</p>
+						<p>Замена цвета 700р.</p>
+					</div>
+
+					<div class="info-section">
+						<p class="section-title">Упаковка:</p>
+						<ul>
+							<li>пакет на пачку футболок - 8р.</li>
+							<li>пакет для толстовок - 12р.</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="separator"></div>
+
+				<p class="pricing-description">
+					Расчет стоимости шелкографии зависит от размера печати и количества
+					цветов в изображении.
+				</p>
+
+				<div class="separator"></div>
+
+				<div class="section-container">
+					<h1 class="main-title">
+						Шелкография (трафаретная печать на натуральной и синтетической
+						ткани)
+					</h1>
+
+					<p class="paragraph">
+						Данный способ выгоден в финансовом отношении при больших заказах.
+						Если вам предстоит производство крупной партии, метод шелкографии
+						поможет уложиться в бюджет. Чем больше единиц товара нужно — тем
+						меньше окажется цена за штуку, при этом качество изображения
+						остается неизменно высоким.
+					</p>
+
+					<p class="paragraph">
+						Для изготовления каждой новой партии создаются специальные
+						трафареты, поэтому штамповка нового лекала для штучного товара —
+						затратный процесс, но возможный. Если же вы оформляете печать в
+						корпоративных и промышленных масштабах, выгода будет ощутимой.
+					</p>
+
+					<h2 class="subheading">Преимущества полноцветной шелкографии</h2>
+
+					<p class="paragraph">
+						Для печати подходят синтетические и натуральные ткани. В процессе
+						нанесения используется мягкая термическая обработка. Нет опасности
+						деформации ткани, а значит нет ограничений по составам.
+					</p>
+
+					<p class="paragraph">
+						Яркое изображение, доступное благодаря технологии цветоделения. Для
+						каждого тона создается отдельный трафарет, который максимально точно
+						позволяет перенести оттенок и обеспечить наилучшее прокрашивание.
+					</p>
+
+					<p class="paragraph">
+						Доступна печать на крое и готовых изделиях. Размеры ограничиваются
+						не формой, а метражом. Максимальные форматы — 150 x 100 см (5
+						цветов), 75 x 90 см (4) и 40 x 60 см (8).
+					</p>
+
+					<div class="faq-question">
+						Можно ли с помощью шелкографии на футболках создать объемное
+						изображение?
+					</div>
+
+					<p class="faq-answer">
+						— Конечно! Если вы хотите добавить специальные эффекты, например,
+						глянцевый блеск или нанести объемный лак, эта технология вам
+						подойдет.
+					</p>
+
+					<div class="faq-question">
+						Можно ли сделать шелкографию золотом или серебром?
+					</div>
+
+					<p class="faq-answer">
+						— Да, услуга пользуется популярностью. Не имеет значения, какой
+						оттенок вы хотите нанести, он может быть с металлическим отливом,
+						ограничение существует только по количеству используемых цветов.
+					</p>
+
+					<h2 class="subheading">
+						Случаи, когда печать шелкографией на ткани вам не подойдет
+					</h2>
+
+					<p class="paragraph">
+						Основными противопоказаниями считаются низкое изначальное разрешение
+						печатного изображения. Трафаретный метод не способен передать очень
+						тонкие градиенты и неочевидные полутона. Если рисунок состоит из
+						плавных переходов, попробуйте сублимационную или цифровую печать. Вы
+						получите такой же насыщенный принт, но при этом сохраните оттенки.
+					</p>
+
+					<p class="paragraph">
+						Если затрудняетесь с выбором — спросите нашего онлайн менеджера, он
+						сориентирует. Ну а если вы уже определились и находитесь в верном
+						разделе, ознакомьтесь с ценами.
+					</p>
+
+					<h2 class="subheading">Правила ухода за изделием</h2>
+
+					<p class="paragraph">
+						Щадящая стирка. Ручная стирка. Стирка цветного белья (до 40 °C).
+						Сушить при средней температуре (нормальная сушка). Гладить при
+						температуре утюга до 130 °C (шерсть, шелк, вискоза, полиэфир,
+						полиэстер).
+					</p>
+
+					<div class="bottom-separator"></div>
+				</div>
+			</main>
+
+			<footer class="footer">
+				<div class="footer-wrapper">
+					<!-- Левая колонка -->
+					<div class="footer-left">
+						<!-- Заголовок футера с бургер-меню -->
+						<div class="footer-heading">
+							<h3>Навигация</h3>
+							<button class="footer-mobile-menu-btn" id="footerMobileMenuBtn">
+								<span></span>
+								<span></span>
+								<span></span>
+							</button>
+						</div>
+
+						<!-- Навигация (стандартная) -->
+						<div class="footer-nav" id="footerNav">
+							<div class="nav-column">
+								<a href="/MerchProduction/About us/">О нас</a>
+								<a href="/MerchProduction/Services/">Услуги</a>
+								<a href="/MerchProduction/Catalog/">Каталог</a>
+								<a href="/MerchProduction/Prices/">Цены</a>
+								<a href="/MerchProduction/Delivery/">Доставка</a>
+								<a href="/MerchProduction/Payment/">Оплата</a>
+							</div>
+							<div class="nav-column">
+								<a href="/MerchProduction/Cases/">Кейсы</a>
+								<a href="/MerchProduction/Jobs/">Вакансии</a>
+								<a href="/MerchProduction/Discounts/">Скидки</a>
+								<a href="/MerchProduction/Partners/">Партнёрам</a>
+								<a href="/MerchProduction/FAQ/">Частые вопросы</a>
+								<a href="/MerchProduction/Requirements/"
+									>Требования к макетам</a
+								>
+							</div>
+						</div>
+
+						<!-- Контакты и соцсети -->
+						<div class="footer-info">
+							<!-- Верхний ряд контактов -->
+							<div class="contacts-row">
+								<div class="contact-item">
+									<h4>Контакты:</h4>
+									<a href="tel:84993228207">
+										<p>+ 7 499 322 82 07</p>
+									</a>
+								</div>
+								<div class="contact-item">
+									<h4>Почта:</h4>
+									<a href="mailto:hello@merchproduction.ru">
+										<p>hello@merchproduction.ru</p>
+									</a>
+								</div>
+							</div>
+
+							<!-- Адрес и точки -->
+							<div class="address-row">
+								<div class="address-left">
+									<div class="contact-item">
+										<h4>Адрес:</h4>
+										<a
+											href="https://yandex.ru/maps/?um=constructor%3A5c3c62e456047bbe11750e40d2683789ef50159f97a2d2be216a87eb0b796864&source=constructorLink"
+										>
+											<p>Москва, Смольная улица, 32</p>
+										</a>
+										<p class="schedule"><b>•</b> по будням с 9:00 до 18:00</p>
+									</div>
+								</div>
+								<div class="social-dots">
+									<a href="#">
+										<img src="./sources/telega.svg" alt="telega" class="dot" />
+									</a>
+									<a
+										href="https://wa.me/84993228207?text=Добрый%20день%2C%20я%20по%20поводу..."
+									>
+										<img
+											src="./sources/whatsapp.svg"
+											alt="whatsapp"
+											class="dot"
+										/>
+									</a>
+								</div>
+							</div>
+
+							<!-- Копирайт -->
+							<div class="copyright">
+								<p>© 2025 - Merch Production</p>
+								<p>Все права защищены</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Правая форма -->
+					<div class="footer-form">
+						<div class="form-content">
+							<div class="form-header">
+								<h2>Поделитесь<br />своей идеей,</h2>
+								<p>
+									а мы подскажем<br />как воплотить<br />её <span>в жизнь</span>
+								</p>
+							</div>
+							<p class="min-order">Минимальная сумма заказа — 100 000 ₽</p>
+							<form>
+								<input type="text" placeholder="Ваше имя" />
+								<input type="tel" placeholder="Ваш номер телефона" />
+								<button type="submit">Проконсультироваться</button>
+							</form>
+						</div>
+						<div class="footer-image">
+							<img src="./sources/person-footer.svg" alt="model" />
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<!-- JavaScript для мобильного меню -->
+		<script src="./mobile-menu.js"></script>
+	</body>
+</html>
